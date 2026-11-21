@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <script src="js/frame-guard.js?v=202611211308"></script>
+    <title>CHIBACH · Registro y control para granjas porcinas</title>
+    <meta name="description" content="CHIBACH registra la reproducción, el destete, la engorda, la sanidad y el rastro de su granja de cerdos, y calcula la ganancia diaria, la conversión y el tiempo de retiro.">
+    <meta name="theme-color" content="#26331A">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CHIBACH · Registro y control para granjas porcinas">
+    <meta property="og:description" content="Cerdas, lotes, sanidad y rastro de su granja en un solo lugar, con cifras que se calculan solas.">
+    <meta property="og:image" content="img/redes.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <link rel="icon" href="img/favicon.svg?v=202611211308" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600..800&amp;family=DM+Mono:wght@400;500&amp;family=Source+Sans+3:wght@400..800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sitio.css?v=202611211308">
+    <script src="js/sitio.js?v=202611211308" defer></script>
+</head>
+<body>
+<a class="saltar" href="#contenido">Ir al contenido</a>
+
+<header class="cab" id="cabecera">
+    <div class="cab-in">
+        <a class="logo" href="#inicio" aria-label="CHIBACH, inicio"><svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" role="img">
+  <title>CHIBACH</title>
+  <g>
+  <path fill="currentColor" d="M6 30L6 25L2 21L5 18L10 22L14 18.9L16 17.7L16 48L16 58L9 58L9 45L7.9 43.9L6.9 42.6L6.2 41L5.8 39.2L5.5 37.3L5.4 35.1L5.6 32.6Z"/>
+  <path fill="currentColor" d="M20 15.7L22.1 14.9L26.2 14L27 14L27 49.9L26.4 49.9L22.9 49.5L20 49Z"/>
+  <path fill="currentColor" d="M31 14L34.6 14.5L38 15.6L38 49.2L36.4 49.5L33.1 49.9L31 50Z"/>
+  <path fill="currentColor" d="M42 17.5L43 18L46 17L53 5L53 20L56 25L62 25L62 38L55 39L54.7 40.2L54.3 41.3L53.8 42.3L53.2 43.2L52.6 44.1L51.8 44.8L51 45.5L50 46L50 58L43 58L43 48L42 48.3Z"/>
+  </g>
+  <text x="80" y="45" font-family="'Archivo', sans-serif" font-size="36" font-weight="700" fill="currentColor">CHIBACH</text>
+</svg></a>
+        <button type="button" class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menuNav">Menú</button>
+        <nav class="nav" id="menuNav" aria-label="Secciones">
+            <a href="#equipamiento">Equipamiento</a>
+            <a href="#demo">Demo</a>
+            <a href="#versiones">Versiones y precios</a>
+            <a href="#preguntas">Preguntas</a>
+        </nav>
+        <a class="btn btn-cab" data-contacto="cabecera" href="https://wa.me/50258253416?text=Hola%2C%20quiero%20conocer%20CHIBACH%20para%20mi%20granja%20de%20cerdos." target="_blank" rel="noopener noreferrer">Escríbanos por WhatsApp</a>
+    </div>
+</header>
+
+<main id="contenido">
+
+<section class="portada" id="inicio">
+    <div class="envoltura portada-in">
+        <div class="portada-txt">
+            <p class="etiqueta etiqueta-hero">Nuevo · Registro y control para granjas porcinas</p>
+            <h1>Sepa cómo va cada lote y cada cerda, sin cuadernos ni hojas sueltas</h1>
+            <p class="portada-sub">CHIBACH registra la reproducción, el destete, la engorda, la sanidad y el rastro de su granja, y calcula por usted la ganancia diaria, la conversión y el tiempo de retiro.</p>
+            <div class="botones">
+                <a class="btn btn-primario" href="#demo">Pruébela ahora</a>
+                <a class="btn btn-borde" data-contacto="portada" href="https://wa.me/50258253416?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20CHIBACH%20y%20quiero%20cotizar%20para%20mi%20granja." target="_blank" rel="noopener noreferrer">Cotice por WhatsApp</a>
+            </div>
+            <p class="portada-nota">La demo es la aplicación real con una granja de ejemplo. No necesita instalar nada.</p>
+        </div>
+        <div class="dispositivos">
+            <div class="portatil">
+                <div class="portatil-pantalla"><img src="img/capturas/tablero-administradora.jpg?c=202611210702" alt="Tablero de CHIBACH con el semáforo de tres granjas y los gráficos de destetados por cerda al año y conversión alimenticia" fetchpriority="high" width="1600" height="1000"></div>
+                <div class="portatil-base"></div>
+            </div>
+            <div class="celular">
+                <div class="celular-pantalla"><img src="img/capturas/cel-tablero.jpg?c=202611210702" alt="El mismo tablero de CHIBACH en la pantalla de un celular" fetchpriority="high" width="780" height="1688"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="seccion" id="ficha">
+    <div class="envoltura">
+        <header class="encabezado">
+            <p class="etiqueta">Ficha técnica</p>
+            <h2>Lo que trae, contado desde la propia aplicación</h2>
+            <p class="intro">Cada cifra se lee de cómo está construida la aplicación. Si cambia, esta página cambia con ella.</p>
+        </header>
+        <ul class="ficha">
+            <li class="cifra"><span class="cifra-n" data-fin="3">3</span><span class="cifra-t">Líneas de producción: reproducción, destete y engorda, cada una con su plan.</span></li>
+            <li class="cifra"><span class="cifra-n" data-fin="3">3</span><span class="cifra-t">Niveles de acceso: la plataforma, la administración de la empresa y el representante de cada granja.</span></li>
+            <li class="cifra"><span class="cifra-n" data-fin="30">30</span><span class="cifra-t">Un cobro cada 30 días, por el mes ya usado.</span></li>
+            <li class="cifra"><span class="cifra-n" data-fin="30">30</span><span class="cifra-t">Días de plazo para registrar el informe de la planta de sacrificio. (Premium)</span></li>
+            <li class="cifra"><span class="cifra-n" data-fin="30">30</span><span class="cifra-t">Cerdos por revisar en cada venta, ajustable por granja. (Premium)</span></li>
+            <li class="cifra"><span class="cifra-n" data-fin="2">2</span><span class="cifra-t">Guías genéticas de crecimiento cargadas, para comparar cada lote con la curva de su genética.</span></li>
+            <li class="cifra"><span class="cifra-n" data-fin="7">7</span><span class="cifra-t">Lóbulos del pulmón en el diagrama del rastro, con su puntaje de lesión. (Premium)</span></li>
+        </ul>
+    </div>
+</section>
+
+<section class="seccion seccion-alt" id="equipamiento">
+    <div class="envoltura">
+        <header class="encabezado">
+            <p class="etiqueta">Equipamiento</p>
+            <h2>Seis herramientas para el trabajo de todos los días</h2>
+            <p class="intro">Cada una se puede comprobar en la demo. Debajo de cada herramienta dice en qué planes viene.</p>
+        </header>
+
+        <article class="bloque" data-herramienta="base">
+            <figure class="bloque-fig"><div class="pantalla"><img src="img/capturas/cerdas.jpg?c=202611210702" alt="Lista de las 40 cerdas de la granja El Encino con su situación, parto probable y alertas" width="1600" height="1000"></div></figure>
+            <div class="bloque-txt">
+                <p class="etiqueta">Reproducción y cruces</p>
+                <h3>Cada cerda con su historia y el parto que viene sin hacer cuentas</h3>
+                <p>Registre servicios, diagnósticos, partos, adopciones, destetes y bajas en la ficha de cada cerda y de cada verraco. Los días no productivos, la tasa de parto y el intervalo destete-servicio se calculan solos.</p>
+                <ul class="vinetas">
+                    <li>La fecha probable de parto sale del servicio más 114 días.</li>
+                    <li>La lista muestra si cada cerda está vacía, servida, gestante o lactando, con sus alertas, como "Parto probable en 7 días".</li>
+                    <li>El parto anota nacidos vivos, nacidos muertos, momias y el peso de la camada.</li>
+                </ul>
+                <p class="incluye">Incluido en todos los planes</p>
+            </div>
+        </article>
+
+        <article class="bloque bloque-inv" data-herramienta="base">
+            <figure class="bloque-fig"><div class="pantalla"><img src="img/capturas/curva-lote.jpg?c=202611210702" alt="Gráfico del peso de un lote de engorda contra la curva de su guía genética" width="1600" height="1000"></div></figure>
+            <div class="bloque-txt">
+                <p class="etiqueta">Destete y engorda contra la guía</p>
+                <h3>Cada lote contra la curva de su genética</h3>
+                <p>Anote el día de cada corral y pese por muestra: la aplicación calcula la ganancia diaria, la conversión alimenticia y la mortalidad, y compara el peso del lote con la guía de su cruce.</p>
+                <ul class="vinetas">
+                    <li>La curva de la guía trae su fuente publicada, y el último pesaje muestra la diferencia en kilos y en porcentaje.</li>
+                    <li>La mortalidad acumulada se dibuja contra la meta y la alerta de la granja.</li>
+                    <li>Cada día se anotan las muertes con su causa, el alimento en kilos y las observaciones del corral.</li>
+                </ul>
+                <p class="incluye">Incluido en todos los planes</p>
+            </div>
+        </article>
+
+        <article class="bloque" data-herramienta="sanidad">
+            <figure class="bloque-fig"><div class="pantalla"><img src="img/capturas/venta-bloqueada.jpg?c=202611210702" alt="Lote de engorda con el aviso de retiro vigente y el botón Registrar venta cerrado" width="1600" height="1000"></div></figure>
+            <div class="bloque-txt">
+                <p class="etiqueta">Sanidad y retiros</p>
+                <h3>El retiro vigente frena la venta del lote</h3>
+                <p>Cada aplicación lleva su producto, dosis, vía y días de retiro. Mientras el retiro siga vigente, el lote muestra el aviso y el botón Registrar venta queda cerrado.</p>
+                <ul class="vinetas">
+                    <li>El aviso dice desde qué fecha se puede vender y con qué producto.</li>
+                    <li>Si los cerdos vienen de otro lote con retiro, el aviso nombra el lote de origen.</li>
+                    <li>La sanidad de la granja separa las vacunas atrasadas de las que tocan esta semana.</li>
+                </ul>
+                <p class="incluye">Incluido en los planes Pro y Premium</p>
+            </div>
+        </article>
+
+        <article class="bloque bloque-inv" data-herramienta="rastro">
+            <figure class="bloque-fig"><div class="pantalla"><img src="img/capturas/rastro-perdida.jpg?c=202611210702" alt="Gráficos del rastro: lesión pulmonar entre lotes y pérdida estimada por lote en quetzales" width="1600" height="1000"></div></figure>
+            <div class="bloque-txt">
+                <p class="etiqueta">Rastro que se vuelve dinero perdido</p>
+                <h3>Cuánto alimento extra le costó la neumonía a cada lote</h3>
+                <p>Cuando un lote sale a la planta de sacrificio, se registran en el celular las lesiones de una muestra de cerdos. La aplicación las suma por lote y estima la pérdida en quetzales.</p>
+                <ul class="vinetas">
+                    <li>Un diagrama del pulmón con 7 lóbulos: se toca cada uno y se elige su puntaje de 0 a 4.</li>
+                    <li>Se anotan también la pleura (SPES), la pericarditis y las manchas del hígado, y el lote muestra su índice APPI.</li>
+                    <li>Con menos de 30 pulmones revisados, el resultado se marca como orientativo.</li>
+                </ul>
+                <p class="incluye">Incluido solo en Premium</p>
+            </div>
+        </article>
+
+        <article class="bloque" data-herramienta="base">
+            <figure class="bloque-fig"><div class="pantalla"><img src="img/capturas/graficos-tabla.jpg?c=202611210702" alt="Tablero de CHIBACH con un gráfico y la opción Ver los datos en tabla abierta" width="1600" height="1000"></div></figure>
+            <div class="bloque-txt">
+                <p class="etiqueta">Gráficos para controlar</p>
+                <h3>Cada gráfico responde una pregunta de su granja</h3>
+                <p>La pregunta va escrita arriba de cada gráfico, por ejemplo "¿Qué granja destetó más lechones por cada cerda al año?". Así se mira lo que importa y se decide.</p>
+                <ul class="vinetas">
+                    <li>Debajo de cada gráfico, "Ver los datos en tabla" muestra los mismos números.</li>
+                    <li>Cada gráfico se baja en imagen (PNG) o en Excel, según el plan.</li>
+                    <li>El comparativo pone de 2 a 6 lotes, o los cruces, lado a lado (planes Pro y Premium).</li>
+                </ul>
+                <p class="incluye">Incluido en todos los planes</p>
+            </div>
+        </article>
+
+        <article class="bloque bloque-inv" data-herramienta="fotos">
+            <figure class="bloque-fig bloque-fig-cel"><div class="celular celular-bloque"><div class="celular-pantalla"><img src="img/capturas/cel-fotos.jpg?c=202611210702" alt="Fotos de un registro de sanidad en la pantalla de un celular" width="780" height="1688"></div></div></figure>
+            <div class="bloque-txt">
+                <p class="etiqueta">Fotos y celular</p>
+                <h3>La foto del corral queda con el registro, y el registro se llena en el celular</h3>
+                <p>Tome la foto de la lesión o del corral y anéxela al registro. El registro del día de cada lote también se llena desde el celular: muertes, alimento y observaciones.</p>
+                <ul class="vinetas">
+                    <li>La foto se reduce en el celular a 1,280 píxeles de lado mayor antes de subirla, y se guarda una miniatura de 320 píxeles.</li>
+                    <li>Cada registro admite hasta 5 fotos.</li>
+                    <li>La pantalla se adapta al celular, con un menú que se abre y se cierra.</li>
+                </ul>
+                <p class="incluye">Las fotos: Incluido solo en Premium. El uso en el celular: incluido en todos los planes.</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="seccion" id="galeria">
+    <div class="envoltura">
+        <header class="encabezado">
+            <p class="etiqueta">Galería</p>
+            <h2>Así se ve por dentro</h2>
+            <p class="intro">Capturas de la demo, con la granja de ejemplo.</p>
+        </header>
+        <div class="galeria" id="galeria-caja">
+            <div class="galeria-pista" id="galeria-pista" tabindex="0" role="region" aria-label="Capturas de la aplicación">
+                <figure class="diapo"><div class="pantalla"><img src="img/capturas/tablero-administradora.jpg?c=202611210702" alt="Tablero de la administradora con el semáforo por granja" loading="lazy" width="1600" height="1000"></div><figcaption>Tablero de la administradora: el semáforo de cada granja.</figcaption></figure>
+                <figure class="diapo"><div class="pantalla"><img src="img/capturas/cerdas.jpg?c=202611210702" alt="Lista de cerdas de la granja con su situación y parto probable" loading="lazy" width="1600" height="1000"></div><figcaption>Reproducción: las cerdas de la granja, con su parto probable.</figcaption></figure>
+                <figure class="diapo"><div class="pantalla"><img src="img/capturas/ficha-cerda.jpg?c=202611210702" alt="Ficha de una cerda con su historial" loading="lazy" width="1600" height="1000"></div><figcaption>La ficha de una cerda, con su historial.</figcaption></figure>
+                <figure class="diapo"><div class="pantalla"><img src="img/capturas/parto-lleno.jpg?c=202611210702" alt="Formulario de parto lleno con nacidos vivos, muertos y peso de la camada" loading="lazy" width="1600" height="1000"></div><figcaption>El registro de un parto.</figcaption></figure>
+                <figure class="diapo"><div class="pantalla"><img src="img/capturas/lotes.jpg?c=202611210702" alt="Línea de destete con sus naves, corrales y lote activo" loading="lazy" width="1600" height="1000"></div><figcaption>Destete: naves, corrales y el lote de cada uno.</figcaption></figure>
+                <figure class="diapo"><div class="pantalla"><img src="img/capturas/curva-lote.jpg?c=202611210702" alt="Peso del lote contra la guía de su genética" loading="lazy" width="1600" height="1000"></div><figcaption>El peso del lote contra la guía de su genética.</figcaption></figure>
+                <figure class="diapo"><div class="pantalla"><img src="img/capturas/aplicaciones-retiro.jpg?c=202611210702" alt="Aplicaciones de sanidad con sus días de retiro" loading="lazy" width="1600" height="1000"></div><figcaption>Sanidad: aplicaciones y días de retiro.</figcaption></figure>
+                <figure class="diapo"><div class="pantalla"><img src="img/capturas/rastro-diagrama.jpg?c=202611210702" alt="Mapa de calor del pulmón por lóbulos con sus indicadores" loading="lazy" width="1600" height="1000"></div><figcaption>Rastro: el mapa de calor del pulmón de un lote.</figcaption></figure>
+                <figure class="diapo"><div class="pantalla"><img src="img/capturas/comparativo.jpg?c=202611210702" alt="Comparativo de lotes lado a lado" loading="lazy" width="1600" height="1000"></div><figcaption>El comparativo de lotes y cruces.</figcaption></figure>
+                <figure class="diapo"><div class="pantalla"><img src="img/capturas/excel.jpg?c=202611210702" alt="Descarga de la tabla de alimento en Excel" loading="lazy" width="1600" height="1000"></div><figcaption>Cada tabla se puede bajar en Excel, según el plan.</figcaption></figure>
+            </div>
+            <div class="galeria-ctl" id="galeria-ctl" hidden>
+                <button type="button" class="flecha" id="galeria-ant" aria-label="Captura anterior">‹</button>
+                <p class="contador" id="galeria-cont" aria-live="polite">1 de 10</p>
+                <div class="puntos" id="galeria-puntos"></div>
+                <button type="button" class="flecha" id="galeria-sig" aria-label="Captura siguiente">›</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="seccion franja" id="demo">
+    <div class="envoltura">
+        <header class="encabezado">
+            <p class="etiqueta">Prueba de manejo</p>
+            <h2>Pruébela como si fuera su granja</h2>
+            <p class="intro">Es la aplicación real con una empresa de ejemplo, de tres granjas. Entre con el perfil que quiera ver. Los cambios no se guardan.</p>
+        </header>
+        <div class="demo-marco" id="demo-marco">
+            <div class="demo-espera" id="demo-espera">
+                <p>La demo se abre en esta sección.</p>
+                <a class="btn btn-claro" href="demo/">Abrir la demo</a>
+            </div>
+            <iframe id="demo-iframe" title="Demo de CHIBACH" data-src="demo/?v=202611211308" hidden></iframe>
+        </div>
+        <p class="demo-pie"><a class="btn btn-claro-borde" id="demo-pantalla" href="demo/" target="_blank" rel="noopener noreferrer">Abrir en pantalla completa</a></p>
+    </div>
+</section>
+
+<section class="seccion" id="perfiles">
+    <div class="envoltura">
+        <header class="encabezado">
+            <p class="etiqueta">Guía por perfil</p>
+            <h2>Cada persona ve lo que le toca</h2>
+            <p class="intro">En la demo puede entrar con cualquiera de estos cuatro perfiles. Cada uno tiene su paso a paso en el manual.</p>
+        </header>
+        <ul class="perfiles">
+            <li class="perfil">
+                <h3>Administradora de empresa</h3>
+                <p>Ve todas las granjas de la empresa: el semáforo, el comparativo, el plan y los pagos, los usuarios y la bitácora.</p>
+                <a class="enlace" href="manual.html#paso-a-paso-administradora" aria-label="Su capítulo en el manual: administradora de empresa">Su capítulo en el manual</a>
+            </li>
+            <li class="perfil">
+                <h3>Representante de granja</h3>
+                <p>Registra en las granjas que se le asignaron: el día de cada lote, los pesajes, los partos y las ventas.</p>
+                <a class="enlace" href="manual.html#paso-a-paso-representante" aria-label="Su capítulo en el manual: representante de granja">Su capítulo en el manual</a>
+            </li>
+            <li class="perfil">
+                <h3>Veterinaria</h3>
+                <p>Mira qué requiere atención en la granja: partos de la semana, cerdas sin servicio, retiros vigentes y vacunas atrasadas.</p>
+                <a class="enlace" href="manual.html#paso-a-paso-veterinaria" aria-label="Su capítulo en el manual: veterinaria">Su capítulo en el manual</a>
+            </li>
+            <li class="perfil">
+                <h3>Primer ingreso</h3>
+                <p>Quien recibe su acceso cambia la contraseña temporal por una propia, de al menos 10 caracteres, y entra.</p>
+                <a class="enlace" href="manual.html#paso-a-paso-primer-ingreso" aria-label="Su capítulo en el manual: primer ingreso">Su capítulo en el manual</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="seccion seccion-alt" id="versiones">
+    <div class="envoltura">
+        <header class="encabezado">
+            <p class="etiqueta">Versiones y precios</p>
+            <h2>Tres planes, un precio por cada línea de producción</h2>
+            <p class="intro">Cada línea de producción (Reproducción, Destete y Engorda) se paga aparte, según su tamaño. Precios en dólares de Estados Unidos, por mes.</p>
+        </header>
+        <div class="planes">
+            <article class="plan">
+                
+                <h3>Básico</h3>
+                <p class="plan-desde">desde <span class="plan-precio">US$ 8</span> al mes por línea</p>
+                <ul class="plan-lista">
+                    <li>Registros, pesajes, alimento y alertas</li>
+                    <li>Descargar en Excel</li>
+                </ul>
+                <a class="btn btn-borde" data-contacto="plan-basico" href="https://wa.me/50258253416?text=Hola%2C%20me%20interesa%20el%20plan%20B%C3%A1sico%20de%20CHIBACH%20para%20mi%20granja%20de%20cerdos." target="_blank" rel="noopener noreferrer">Cotice por WhatsApp</a>
+            </article>
+            <article class="plan plan-reco">
+                <p class="reco">Recomendada</p>
+                <h3>Pro</h3>
+                <p class="plan-desde">desde <span class="plan-precio">US$ 11</span> al mes por línea</p>
+                <ul class="plan-lista">
+                    <li>Registros, pesajes, alimento y alertas</li>
+                    <li>Comparativo de lotes y cruces</li>
+                    <li>Cargar desde Excel</li>
+                    <li>Descargar en Excel</li>
+                    <li>Exportar gráficos en imagen</li>
+                    <li>Sanidad y serología</li>
+                </ul>
+                <a class="btn btn-primario" data-contacto="plan-pro" href="https://wa.me/50258253416?text=Hola%2C%20me%20interesa%20el%20plan%20Pro%20de%20CHIBACH%20para%20mi%20granja%20de%20cerdos." target="_blank" rel="noopener noreferrer">Cotice por WhatsApp</a>
+            </article>
+            <article class="plan">
+                
+                <h3>Premium</h3>
+                <p class="plan-desde">desde <span class="plan-precio">US$ 15</span> al mes por línea</p>
+                <ul class="plan-lista">
+                    <li>Registros, pesajes, alimento y alertas</li>
+                    <li>Comparativo de lotes y cruces</li>
+                    <li>Cargar desde Excel</li>
+                    <li>Descargar en Excel</li>
+                    <li>Exportar gráficos en imagen</li>
+                    <li>Rastro: lesiones de órganos</li>
+                    <li>Sanidad y serología</li>
+                    <li>Fotos</li>
+                </ul>
+                <a class="btn btn-borde" data-contacto="plan-premium" href="https://wa.me/50258253416?text=Hola%2C%20me%20interesa%20el%20plan%20Premium%20de%20CHIBACH%20para%20mi%20granja%20de%20cerdos." target="_blank" rel="noopener noreferrer">Cotice por WhatsApp</a>
+            </article>
+        </div>
+
+        <div class="tabla-bloque">
+            <h3>Reproducción · por cerdas en producción</h3>
+            <div class="table-wrap">
+                <table class="tabla">
+                    <thead><tr><th scope="col">Cerdas en producción</th><th scope="col">Básico</th><th scope="col">Pro</th><th scope="col">Premium</th></tr></thead>
+                    <tbody>
+                    <tr><th scope="row">1 a 30</th><td data-plan="Básico" data-tramo="Cerdas:0">US$ 8</td><td data-plan="Pro" data-tramo="Cerdas:0">US$ 11</td><td data-plan="Premium" data-tramo="Cerdas:0">US$ 15</td></tr>
+                    <tr><th scope="row">31 a 100</th><td data-plan="Básico" data-tramo="Cerdas:1">US$ 15</td><td data-plan="Pro" data-tramo="Cerdas:1">US$ 19</td><td data-plan="Premium" data-tramo="Cerdas:1">US$ 23</td></tr>
+                    <tr><th scope="row">101 a 300</th><td data-plan="Básico" data-tramo="Cerdas:2">US$ 23</td><td data-plan="Pro" data-tramo="Cerdas:2">US$ 26</td><td data-plan="Premium" data-tramo="Cerdas:2">US$ 30</td></tr>
+                    <tr><th scope="row">301 a 700</th><td data-plan="Básico" data-tramo="Cerdas:3">US$ 34</td><td data-plan="Pro" data-tramo="Cerdas:3">US$ 38</td><td data-plan="Premium" data-tramo="Cerdas:3">US$ 41</td></tr>
+                    <tr><th scope="row">701 a 1,500</th><td data-plan="Básico" data-tramo="Cerdas:4">US$ 45</td><td data-plan="Pro" data-tramo="Cerdas:4">US$ 49</td><td data-plan="Premium" data-tramo="Cerdas:4">US$ 53</td></tr>
+                    <tr><th scope="row">1,501 a 3,000</th><td data-plan="Básico" data-tramo="Cerdas:5">US$ 60</td><td data-plan="Pro" data-tramo="Cerdas:5">US$ 64</td><td data-plan="Premium" data-tramo="Cerdas:5">US$ 68</td></tr>
+                    <tr><th scope="row">Más de 3,000</th><td colspan="3" class="a-medida" data-plan="todos" data-tramo="Cerdas:6">A la medida</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="tabla-bloque">
+            <h3>Destete y Engorda · por cerdos vivos</h3>
+            <div class="table-wrap">
+                <table class="tabla">
+                    <thead><tr><th scope="col">Cerdos vivos</th><th scope="col">Básico</th><th scope="col">Pro</th><th scope="col">Premium</th></tr></thead>
+                    <tbody>
+                    <tr><th scope="row">1 a 300</th><td data-plan="Básico" data-tramo="Cerdos:0">US$ 8</td><td data-plan="Pro" data-tramo="Cerdos:0">US$ 11</td><td data-plan="Premium" data-tramo="Cerdos:0">US$ 15</td></tr>
+                    <tr><th scope="row">301 a 1,000</th><td data-plan="Básico" data-tramo="Cerdos:1">US$ 15</td><td data-plan="Pro" data-tramo="Cerdos:1">US$ 19</td><td data-plan="Premium" data-tramo="Cerdos:1">US$ 23</td></tr>
+                    <tr><th scope="row">1,001 a 3,000</th><td data-plan="Básico" data-tramo="Cerdos:2">US$ 23</td><td data-plan="Pro" data-tramo="Cerdos:2">US$ 26</td><td data-plan="Premium" data-tramo="Cerdos:2">US$ 30</td></tr>
+                    <tr><th scope="row">3,001 a 7,000</th><td data-plan="Básico" data-tramo="Cerdos:3">US$ 34</td><td data-plan="Pro" data-tramo="Cerdos:3">US$ 38</td><td data-plan="Premium" data-tramo="Cerdos:3">US$ 41</td></tr>
+                    <tr><th scope="row">7,001 a 15,000</th><td data-plan="Básico" data-tramo="Cerdos:4">US$ 45</td><td data-plan="Pro" data-tramo="Cerdos:4">US$ 49</td><td data-plan="Premium" data-tramo="Cerdos:4">US$ 53</td></tr>
+                    <tr><th scope="row">15,001 a 30,000</th><td data-plan="Básico" data-tramo="Cerdos:5">US$ 60</td><td data-plan="Pro" data-tramo="Cerdos:5">US$ 64</td><td data-plan="Premium" data-tramo="Cerdos:5">US$ 68</td></tr>
+                    <tr><th scope="row">Más de 30,000</th><td colspan="3" class="a-medida" data-plan="todos" data-tramo="Cerdos:6">A la medida</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="tabla-bloque">
+            <h3>Ejemplos con el plan Pro, en una granja de ciclo completo</h3>
+            <div class="table-wrap">
+                <table class="tabla tabla-ejemplos">
+                    <thead><tr><th scope="col">Granja</th><th scope="col">Cerdas</th><th scope="col">Cerdos en destete</th><th scope="col">Cerdos en engorda</th><th scope="col">Cada línea</th><th scope="col">Por mes</th></tr></thead>
+                    <tbody>
+                    <tr><th scope="row">Familiar</th><td>20</td><td>70</td><td>150</td><td>11 + 11 + 11</td><td class="total">US$ 33</td></tr>
+                    <tr><th scope="row">Mediana</th><td>100</td><td>350</td><td>750</td><td>19 + 19 + 19</td><td class="total">US$ 57</td></tr>
+                    <tr><th scope="row">Grande</th><td>500</td><td>1,750</td><td>3,750</td><td>38 + 26 + 38</td><td class="total">US$ 102</td></tr>
+                    <tr><th scope="row">Integración</th><td>1,000</td><td>3,500</td><td>7,500</td><td>49 + 38 + 49</td><td class="total">US$ 136</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="nota">Las cantidades de destete y engorda son aproximadas. Una granja de solo engorda paga una sola línea.</p>
+        </div>
+    </div>
+</section>
+
+<section class="seccion" id="rubro">
+    <div class="envoltura">
+        <header class="encabezado">
+            <p class="etiqueta">Hecho para el rubro</p>
+            <h2>De los cuadernos de la nave a un solo lugar</h2>
+            <p class="intro">Una granja de ciclo completo, como ejemplo. No es un cliente.</p>
+        </header>
+        <div class="antes-despues">
+            <div class="ad ad-antes">
+                <h3>Antes</h3>
+                <ul>
+                    <li>Un cuaderno por nave y las hojas de pesaje sueltas.</li>
+                    <li>Los días de retiro de cada tratamiento, de memoria.</li>
+                    <li>Lo que la planta encuentra en los pulmones, que nadie anota.</li>
+                    <li>Los números del mes, juntados a mano al final.</li>
+                </ul>
+            </div>
+            <div class="ad ad-con">
+                <h3>Con CHIBACH</h3>
+                <ul>
+                    <li>Cada cerda y cada lote con su historial en la pantalla.</li>
+                    <li>El retiro vigente avisa y cierra la venta del lote.</li>
+                    <li>Las lesiones del rastro quedan por lote, con su pérdida estimada.</li>
+                    <li>La ganancia diaria y la conversión se calculan al abrir el lote.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="seccion seccion-alt" id="empezar">
+    <div class="envoltura">
+        <header class="encabezado">
+            <p class="etiqueta">Cómo empezar</p>
+            <h2>Tres pasos</h2>
+        </header>
+        <ol class="pasos">
+            <li><h3>Nos escribe</h3><p>Por WhatsApp nos cuenta cuántas cerdas y cuántos cerdos tiene, y qué plan le interesa.</p></li>
+            <li><h3>Preparamos su empresa</h3><p>Dejamos listas sus granjas, naves, corrales y usuarios, cada uno con su perfil.</p></li>
+            <li><h3>Su equipo la usa</h3><p>Registran desde la computadora o el celular, y usted ve las cifras al día.</p></li>
+        </ol>
+    </div>
+</section>
+
+<section class="seccion" id="preguntas">
+    <div class="envoltura envoltura-estrecha">
+        <header class="encabezado">
+            <p class="etiqueta">Preguntas</p>
+            <h2>Preguntas frecuentes</h2>
+        </header>
+        <div class="preguntas">
+            <details><summary>¿Hay que instalar algo?</summary><p>No. Se abre en el navegador de la computadora o del celular. No hay ningún programa que instalar.</p></details>
+            <details><summary>¿Mis datos están seguros?</summary><p>Cada persona entra con su correo y su contraseña, y ve solo lo de su empresa y las granjas que se le asignaron. Las fotos no se publican con enlaces abiertos, y la bitácora guarda lo que hace cada quien.</p></details>
+            <details><summary>¿Funciona en el celular?</summary><p>Sí. El registro del día y los pesajes se llenan desde el celular en todos los planes, y la pantalla se adapta a su tamaño. Las fotos (planes Premium) y el rastro (planes Premium) también se llenan desde el celular.</p></details>
+            <details><summary>¿Puedo pasar mis datos desde Excel?</summary><p>Sí, con los planes Pro y Premium puede cargar sus datos desde Excel. Bajar las tablas en Excel está en todos los planes.</p></details>
+            <details><summary>¿Hay capacitación?</summary><p>Le mostramos cómo se usa cada pantalla, y el manual trae un paso a paso para cada perfil, para que su equipo lo consulte cuando quiera.</p></details>
+            <details><summary>¿Cuánto cuesta?</summary><p>Depende del plan y del tamaño de cada línea de producción. Las tablas de arriba traen todos los tramos. Si su granja pasa del último tramo, se acuerda un precio a la medida.</p></details>
+            <details><summary>¿Cuándo se paga?</summary><p>Cada 30 días, por el mes ya usado. El primer cobro llega al cumplirse el primer mes de servicio.</p></details>
+        </div>
+    </div>
+</section>
+
+<section class="seccion franja cierre" id="contacto">
+    <div class="envoltura cierre-in">
+        <h2>Sus cerdos ya dan datos todos los días. Que sirvan para decidir.</h2>
+        <p class="intro">Cuéntenos de su granja y le recomendamos el plan que le corresponde.</p>
+        <div class="botones botones-centro">
+            <a class="btn btn-claro" data-contacto="cierre" href="https://wa.me/50258253416?text=Hola%2C%20quiero%20empezar%20con%20CHIBACH." target="_blank" rel="noopener noreferrer">Escríbanos por WhatsApp</a>
+            <a class="btn btn-claro-borde" href="#demo">Probar la demo</a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="pie">
+    <div class="envoltura pie-in">
+        <a class="logo logo-pie" href="#inicio" aria-label="CHIBACH, inicio"><svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" role="img">
+  <title>CHIBACH</title>
+  <g>
+  <path fill="currentColor" d="M6 30L6 25L2 21L5 18L10 22L14 18.9L16 17.7L16 48L16 58L9 58L9 45L7.9 43.9L6.9 42.6L6.2 41L5.8 39.2L5.5 37.3L5.4 35.1L5.6 32.6Z"/>
+  <path fill="currentColor" d="M20 15.7L22.1 14.9L26.2 14L27 14L27 49.9L26.4 49.9L22.9 49.5L20 49Z"/>
+  <path fill="currentColor" d="M31 14L34.6 14.5L38 15.6L38 49.2L36.4 49.5L33.1 49.9L31 50Z"/>
+  <path fill="currentColor" d="M42 17.5L43 18L46 17L53 5L53 20L56 25L62 25L62 38L55 39L54.7 40.2L54.3 41.3L53.8 42.3L53.2 43.2L52.6 44.1L51.8 44.8L51 45.5L50 46L50 58L43 58L43 48L42 48.3Z"/>
+  </g>
+  <text x="80" y="45" font-family="'Archivo', sans-serif" font-size="36" font-weight="700" fill="currentColor">CHIBACH</text>
+</svg></a>
+        <p class="pie-empresa">Un producto de Pixan Tech</p>
+        <nav class="pie-nav" aria-label="Enlaces del pie">
+            <a href="manual.html">Manual de uso</a>
+            <a href="demo/">Demo</a>
+        </nav>
+    </div>
+</footer>
+
+<a class="flotante btn btn-primario" data-contacto="flotante" href="https://wa.me/50258253416?text=Hola%2C%20quiero%20conocer%20CHIBACH%20para%20mi%20granja%20de%20cerdos." target="_blank" rel="noopener noreferrer">Escríbanos por WhatsApp</a>
+</body>
+</html>

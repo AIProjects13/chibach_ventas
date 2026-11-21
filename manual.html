@@ -1,0 +1,1485 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <script src="js/frame-guard.js?v=202611211308"></script>
+    <title>Manual de uso · CHIBACH</title>
+    <meta name="description" content="Manual de uso de CHIBACH: quién ve qué, cada pantalla, cada campo, lo que la aplicación calcula sola y el paso a paso de cada perfil.">
+    <meta name="theme-color" content="#26331A">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Manual de uso · CHIBACH">
+    <meta property="og:description" content="Cada pantalla, cada campo y cada cifra de CHIBACH explicados para el equipo de la granja.">
+    <meta property="og:image" content="img/redes.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <link rel="icon" href="img/favicon.svg?v=202611211308" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600..800&amp;family=DM+Mono:wght@400;500&amp;family=Source+Sans+3:wght@400..800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sitio.css?v=202611211308">
+    <link rel="stylesheet" href="css/manual.css?v=202611211308">
+    <script src="js/sitio.js?v=202611211308" defer></script>
+    <script src="js/manual.js?v=202611211308" defer></script>
+</head>
+<body>
+<a class="saltar" href="#contenido">Ir al contenido</a>
+
+<header class="cab" id="cabecera">
+    <div class="cab-in">
+        <a class="logo" href="index.html" aria-label="CHIBACH, inicio"><svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" role="img">
+  <title>CHIBACH</title>
+  <g>
+  <path fill="currentColor" d="M6 30L6 25L2 21L5 18L10 22L14 18.9L16 17.7L16 48L16 58L9 58L9 45L7.9 43.9L6.9 42.6L6.2 41L5.8 39.2L5.5 37.3L5.4 35.1L5.6 32.6Z"/>
+  <path fill="currentColor" d="M20 15.7L22.1 14.9L26.2 14L27 14L27 49.9L26.4 49.9L22.9 49.5L20 49Z"/>
+  <path fill="currentColor" d="M31 14L34.6 14.5L38 15.6L38 49.2L36.4 49.5L33.1 49.9L31 50Z"/>
+  <path fill="currentColor" d="M42 17.5L43 18L46 17L53 5L53 20L56 25L62 25L62 38L55 39L54.7 40.2L54.3 41.3L53.8 42.3L53.2 43.2L52.6 44.1L51.8 44.8L51 45.5L50 46L50 58L43 58L43 48L42 48.3Z"/>
+  </g>
+  <text x="80" y="45" font-family="'Archivo', sans-serif" font-size="36" font-weight="700" fill="currentColor">CHIBACH</text>
+</svg></a>
+        <button type="button" class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menuNav">Menú</button>
+        <nav class="nav" id="menuNav" aria-label="Secciones">
+            <a href="index.html">Inicio</a>
+            <a href="index.html#demo">Demo</a>
+            <a href="index.html#versiones">Versiones y precios</a>
+        </nav>
+        <a class="btn btn-cab" data-contacto="cabecera" href="https://wa.me/50258253416?text=Hola%2C%20quiero%20conocer%20CHIBACH%20para%20mi%20granja%20de%20cerdos." target="_blank" rel="noopener noreferrer">Escríbanos por WhatsApp</a>
+    </div>
+</header>
+
+<div class="manual envoltura">
+    <aside class="indice" id="indice">
+        <button type="button" class="indice-btn" id="indiceBtn" aria-expanded="false" aria-controls="indiceNav">Contenido del manual</button>
+        <nav class="indice-nav" id="indiceNav" aria-label="Contenido del manual">
+            <p class="indice-titulo">Contenido</p>
+            <ol>
+                <li><a href="#cap-1"><span class="n">1</span><span>Cómo se organiza la información</span></a></li>
+                <li><a href="#cap-2"><span class="n">2</span><span>Niveles de acceso</span></a></li>
+                <li><a href="#cap-3"><span class="n">3</span><span>Entrar</span></a></li>
+                <li><a href="#cap-4"><span class="n">4</span><span>Lo común a todas las pantallas</span></a></li>
+                <li><a href="#cap-5"><span class="n">5</span><span>Las pantallas, una por una</span></a></li>
+                <li><a href="#cap-6"><span class="n">6</span><span>Formularios, campo por campo</span></a></li>
+                <li><a href="#cap-7"><span class="n">7</span><span>Lo que calcula solo</span></a></li>
+                <li><a href="#cap-8"><span class="n">8</span><span>Reglas</span></a></li>
+                <li><a href="#cap-9"><span class="n">9</span><span>Paso a paso por perfil</span></a></li>
+                <li><a href="#cap-10"><span class="n">10</span><span>Dónde se guarda cada dato</span></a></li>
+                <li><a href="#cap-11"><span class="n">11</span><span>Seguridad</span></a></li>
+                <li><a href="#cap-12"><span class="n">12</span><span>Preguntas frecuentes</span></a></li>
+                <li><a href="#contacto"><span class="n"></span><span>Contacto</span></a></li>
+            </ol>
+        </nav>
+    </aside>
+
+    <main class="manual-cuerpo" id="contenido">
+
+        <header class="manual-cabeza" id="inicio">
+            <p class="etiqueta">Manual de uso</p>
+            <h1>Cómo se usa CHIBACH, pantalla por pantalla</h1>
+            <p class="intro">Está escrito para quien ya usa CHIBACH o está por decidirlo. Las tablas de permisos, de campos, de valores ajustables y de planes se generan desde la propia aplicación: si algo cambia allá, este manual cambia con ella.</p>
+            <ul class="atajos">
+                <li><a class="enlace" href="#paso-a-paso-administradora">Paso a paso de la administradora</a></li>
+                <li><a class="enlace" href="#paso-a-paso-representante">Paso a paso del representante</a></li>
+                <li><a class="enlace" href="#paso-a-paso-veterinaria">Paso a paso de la veterinaria</a></li>
+                <li><a class="enlace" href="#paso-a-paso-primer-ingreso">Su primer ingreso</a></li>
+            </ul>
+            <div class="aviso aviso-info"><p><strong>Los ejemplos con números</strong> salen de la empresa de ejemplo de la demo (Porcina San Miguel). Los puede comprobar en la demo con el perfil de administradora.</p></div>
+        </header>
+
+        <section class="capitulo" id="cap-1" data-capitulo="1">
+            <h2><span class="num">1</span>Cómo se organiza la información</h2>
+            <p>Todo en CHIBACH cuelga de una empresa. Cada nivel contiene al siguiente y cada persona trabaja en el nivel que le corresponde.</p>
+            <ol class="jerarquia" aria-label="Niveles de la información">
+                <li><strong>Empresa</strong><span>Quien contrata CHIBACH. Tiene una administración y una o varias granjas.</span></li>
+                <li><strong>Granja</strong><span>Un lugar físico. Una empresa puede tener varias, y cada granja trabaja por separado.</span></li>
+                <li><strong>Línea de producción</strong><span>Dentro de la granja hay hasta 3 líneas: Reproducción, Destete y Engorda. Cada línea tiene su ficha, su plan y su precio.</span></li>
+                <li><strong>Nave</strong><span>Un galpón de una línea.</span></li>
+                <li><strong>Corral</strong><span>Un espacio dentro de la nave. Su tipo dice para qué se usa: gestación individual, gestación grupal, maternidad, destete, engorda, verracos y cuarentena.</span></li>
+                <li><strong>Lote o cerda</strong><span>Destete y Engorda trabajan por lotes (grupos de cerdos que entran juntos). Reproducción trabaja con cada cerda por su arete.</span></li>
+            </ol>
+            <div class="aviso aviso-info"><p><strong>Una granja nueva empieza vacía.</strong> La administración de la empresa crea sus granjas; la ficha de cada línea hace que la línea aparezca, y después se agregan naves, corrales, lotes y cerdas.</p></div>
+        </section>
+
+        <section class="capitulo" id="cap-2" data-capitulo="2">
+            <h2><span class="num">2</span>Niveles de acceso</h2>
+            <p>Hay tres niveles de acceso. El primero es del equipo de CHIBACH y no aparece en la demo; los otros dos son los de su empresa.</p>
+            <ul class="perfiles-lista">
+                <li><h3>Plataforma</h3><p>El equipo de CHIBACH. Prepara empresas, planes, precios y cobros. Para darles soporte puede ver y corregir los datos de las empresas; cada cambio que haga queda en la bitácora con su nombre y su motivo.</p></li>
+                <li><h3>Administración de la empresa</h3><p>Ve y trabaja en todas las granjas de su empresa, crea las granjas y los usuarios, y cambia el plan de cada línea.</p></li>
+                <li><h3>Representante de granja</h3><p>Trabaja solo en las granjas que se le asignaron. La veterinaria entra con este nivel, asignada a las granjas que atiende.</p></li>
+            </ul>
+
+            <h3 id="matriz">Qué puede hacer cada perfil</h3>
+            <p>La tabla trae cada operación que la aplicación ofrece a los perfiles de su empresa. "En sus granjas" quiere decir las granjas asignadas al representante. Una operación marcada con un plan solo funciona si el plan de esa línea la incluye.</p>
+            <div class="tabla-m-wrap">
+                <table class="tabla-m matriz">
+                    <thead><tr><th scope="col">Operación</th><th scope="col">Tipo</th><th scope="col">Administración de la empresa</th><th scope="col">Representante o veterinaria</th><th scope="col">Plan</th></tr></thead>
+                    <tbody>
+                        <tr class="grupo"><th scope="colgroup" colspan="5">Entrar y consultar</th></tr>
+                        <tr data-ruta="getSnapshot"><th scope="row">Abrir la aplicación con los datos de su empresa</th><td>Consulta</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="passwordChanged"><th scope="row">Cambiar la contraseña temporal por una propia</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="getBitacora"><th scope="row">Ver la bitácora de cambios</th><td>Consulta</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td>Todos los planes</td></tr>
+                        <tr class="grupo"><th scope="colgroup" colspan="5">Granjas, naves y corrales</th></tr>
+                        <tr data-ruta="savePerfil"><th scope="row">Crear o corregir la ficha de una línea de la granja</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="saveNave"><th scope="row">Crear o corregir una nave</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="setNaveEstado"><th scope="row">Activar o desactivar una nave</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="deleteNave"><th scope="row">Eliminar una nave</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="saveCorral"><th scope="row">Crear o corregir un corral</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="setCorralEstado"><th scope="row">Activar o desactivar un corral</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="deleteCorral"><th scope="row">Eliminar un corral</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="saveCorralesVarios"><th scope="row">Crear varios corrales de una vez</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="saveGranja"><th scope="row">Crear o corregir una granja</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="no"><span class="permiso permiso-no">No</span></td><td>Todos los planes</td></tr>
+                        <tr class="grupo"><th scope="colgroup" colspan="5">Lotes de destete y engorda</th></tr>
+                        <tr data-ruta="saveLote"><th scope="row">Iniciar o corregir un lote</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="cerrarLote"><th scope="row">Cerrar un lote</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="agregarCorralLote"><th scope="row">Agregar un corral a un lote</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="sacarCorralLote"><th scope="row">Sacar un corral de un lote</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="cambiarRegistroLote"><th scope="row">Cambiar si el lote se registra por corral o completo</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="reabrirLote"><th scope="row">Reabrir un lote cerrado</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="deleteLote"><th scope="row">Eliminar un lote</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="saveRegistroLote"><th scope="row">Anotar el registro del día (muertes, alimento, observaciones)</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="deleteRegistroLote"><th scope="row">Eliminar un registro del día</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="savePesaje"><th scope="row">Registrar o corregir un pesaje</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="deletePesaje"><th scope="row">Eliminar un pesaje</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="saveVenta"><th scope="row">Registrar o corregir una venta</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="deleteVenta"><th scope="row">Eliminar una venta</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="trasladarCerdos"><th scope="row">Trasladar cerdos de un lote a otro, también entre granjas</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="deleteTraslado"><th scope="row">Eliminar un traslado</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="getLote"><th scope="row">Ver la ficha, los indicadores y la curva de un lote</th><td>Consulta</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr class="grupo"><th scope="colgroup" colspan="5">Reproducción</th></tr>
+                        <tr data-ruta="saveCerda"><th scope="row">Registrar o corregir una cerda</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="deleteCerda"><th scope="row">Eliminar una cerda</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="saveVerraco"><th scope="row">Registrar o corregir un verraco</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="setVerracoEstado"><th scope="row">Activar o dar de baja un verraco</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="saveEvento"><th scope="row">Anotar un servicio, diagnóstico, parto, adopción, destete o baja</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="deleteEvento"><th scope="row">Eliminar un evento de la cerda</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="getReproduccion"><th scope="row">Ver el ciclo, los indicadores y las alertas de la reproducción</th><td>Consulta</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr class="grupo"><th scope="colgroup" colspan="5">Sanidad y laboratorio</th></tr>
+                        <tr data-ruta="saveProducto"><th scope="row">Registrar o corregir un producto sanitario</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Pro y Premium</td></tr>
+                        <tr data-ruta="deleteProducto"><th scope="row">Eliminar un producto sanitario</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Pro y Premium</td></tr>
+                        <tr data-ruta="savePlanVacuna"><th scope="row">Crear o corregir el plan de vacunas</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Pro y Premium</td></tr>
+                        <tr data-ruta="deletePlanVacuna"><th scope="row">Eliminar una vacuna del plan</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Pro y Premium</td></tr>
+                        <tr data-ruta="saveAplicacion"><th scope="row">Registrar o corregir una aplicación</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Pro y Premium</td></tr>
+                        <tr data-ruta="deleteAplicacion"><th scope="row">Eliminar una aplicación</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Pro y Premium</td></tr>
+                        <tr data-ruta="saveSerologia"><th scope="row">Registrar o corregir una serología</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Pro y Premium</td></tr>
+                        <tr data-ruta="deleteSerologia"><th scope="row">Eliminar una serología</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Pro y Premium</td></tr>
+                        <tr data-ruta="saveNecropsia"><th scope="row">Registrar o corregir una necropsia</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Pro y Premium</td></tr>
+                        <tr data-ruta="deleteNecropsia"><th scope="row">Eliminar una necropsia</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Pro y Premium</td></tr>
+                        <tr data-ruta="getSanidad"><th scope="row">Ver la sanidad de la granja: retiros, vacunas atrasadas y aplicaciones</th><td>Consulta</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Pro y Premium</td></tr>
+                        <tr class="grupo"><th scope="colgroup" colspan="5">Rastro</th></tr>
+                        <tr data-ruta="saveRastroConfig"><th scope="row">Ajustar la configuración del rastro de la granja</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Premium</td></tr>
+                        <tr data-ruta="saveRastro"><th scope="row">Registrar o corregir una revisión de rastro</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Premium</td></tr>
+                        <tr data-ruta="deleteRastro"><th scope="row">Eliminar una revisión de rastro</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Premium</td></tr>
+                        <tr data-ruta="saveRastroCerdo"><th scope="row">Registrar o corregir un cerdo del rastro</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Premium</td></tr>
+                        <tr data-ruta="deleteRastroCerdo"><th scope="row">Eliminar un cerdo del rastro</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Premium</td></tr>
+                        <tr data-ruta="getRastro"><th scope="row">Ver las revisiones y el resumen del rastro por lote</th><td>Consulta</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Premium</td></tr>
+                        <tr class="grupo"><th scope="colgroup" colspan="5">Fotos</th></tr>
+                        <tr data-ruta="subirFoto"><th scope="row">Subir una foto a un registro</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Premium</td></tr>
+                        <tr data-ruta="deleteFoto"><th scope="row">Eliminar una foto</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Premium</td></tr>
+                        <tr data-ruta="getMiniaturas"><th scope="row">Ver las miniaturas de las fotos</th><td>Consulta</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Premium</td></tr>
+                        <tr data-ruta="getFoto"><th scope="row">Ver una foto completa</th><td>Consulta</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Premium</td></tr>
+                        <tr class="grupo"><th scope="colgroup" colspan="5">Alimento</th></tr>
+                        <tr data-ruta="saveCompraAlimento"><th scope="row">Registrar o corregir una compra de alimento</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="deleteCompraAlimento"><th scope="row">Eliminar una compra de alimento</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="getAlimento"><th scope="row">Ver las compras y el costo del alimento</th><td>Consulta</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr class="grupo"><th scope="colgroup" colspan="5">Cuentas de usuario</th></tr>
+                        <tr data-ruta="saveUser"><th scope="row">Crear o corregir un usuario</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="no"><span class="permiso permiso-no">No</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="setUserEstado"><th scope="row">Suspender o reactivar un usuario</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="no"><span class="permiso permiso-no">No</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="resetPassword"><th scope="row">Dar una contraseña temporal nueva</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="no"><span class="permiso permiso-no">No</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="deleteUser"><th scope="row">Eliminar un usuario</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="no"><span class="permiso permiso-no">No</span></td><td>Todos los planes</td></tr>
+                        <tr class="grupo"><th scope="colgroup" colspan="5">Plan y pagos</th></tr>
+                        <tr data-ruta="getPlanes"><th scope="row">Ver el plan, el tramo y el precio de cada línea</th><td>Consulta</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="no"><span class="permiso permiso-no">No</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="cotizarLinea"><th scope="row">Cotizar un cambio de plan o de tramo</th><td>Consulta</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="no"><span class="permiso permiso-no">No</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="setPlanLinea"><th scope="row">Cambiar el plan o el tramo de una línea</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="no"><span class="permiso permiso-no">No</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="getCobros"><th scope="row">Ver los cobros y los pagos de la empresa</th><td>Consulta</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="no"><span class="permiso permiso-no">No</span></td><td>Todos los planes</td></tr>
+                        <tr class="grupo"><th scope="colgroup" colspan="5">Tableros y resúmenes</th></tr>
+                        <tr data-ruta="getTablero"><th scope="row">Ver el tablero de la granja (el semáforo y los gráficos)</th><td>Consulta</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="getComparativo"><th scope="row">Comparar lotes o cruces</th><td>Consulta</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí, en sus granjas</span></td><td>Pro y Premium</td></tr>
+                        <tr data-ruta="getResumenes"><th scope="row">Ver el Resumen de granjas</th><td>Consulta</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="no"><span class="permiso permiso-no">No</span></td><td>Todos los planes</td></tr>
+                        <tr data-ruta="consolidar"><th scope="row">Actualizar el Resumen de granjas</th><td>Consulta</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="no"><span class="permiso permiso-no">No</span></td><td>Todos los planes</td></tr>
+                        <tr class="grupo"><th scope="colgroup" colspan="5">Carga de datos</th></tr>
+                        <tr data-ruta="importarDatos"><th scope="row">Cargar datos desde Excel</th><td>Registra o cambia</td><td data-perfil="administradora" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td data-perfil="representante" data-permiso="si"><span class="permiso permiso-si">Sí</span></td><td>Pro y Premium</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="aviso aviso-atencion"><p><strong>Empresa suspendida.</strong> Si la empresa tiene un cobro vencido más allá de los días de gracia, su gente puede ver y consultar todo, pero no registrar ni corregir. Al pagar, vuelve a trabajar con normalidad.</p></div>
+
+            <h3 id="planes-herramientas">Qué trae cada plan</h3>
+            <p>Cada línea de cada granja tiene su plan. Estas son las herramientas de cada uno.</p>
+            <div class="tabla-m-wrap">
+                <table class="tabla-m planes">
+                    <thead><tr><th scope="col">Herramienta</th><th scope="col">Básico</th><th scope="col">Pro</th><th scope="col">Premium</th></tr></thead>
+                    <tbody>
+                        <tr data-herramienta="base"><th scope="row">Registros, pesajes, alimento y alertas</th><td><span class="permiso permiso-si">Incluida</span></td><td><span class="permiso permiso-si">Incluida</span></td><td><span class="permiso permiso-si">Incluida</span></td></tr>
+                        <tr data-herramienta="comparativo"><th scope="row">Comparativo de lotes y cruces</th><td><span class="permiso permiso-no">No incluida</span></td><td><span class="permiso permiso-si">Incluida</span></td><td><span class="permiso permiso-si">Incluida</span></td></tr>
+                        <tr data-herramienta="cargarExcel"><th scope="row">Cargar desde Excel</th><td><span class="permiso permiso-no">No incluida</span></td><td><span class="permiso permiso-si">Incluida</span></td><td><span class="permiso permiso-si">Incluida</span></td></tr>
+                        <tr data-herramienta="descargarExcel"><th scope="row">Descargar en Excel</th><td><span class="permiso permiso-si">Incluida</span></td><td><span class="permiso permiso-si">Incluida</span></td><td><span class="permiso permiso-si">Incluida</span></td></tr>
+                        <tr data-herramienta="exportarImagen"><th scope="row">Exportar gráficos en imagen</th><td><span class="permiso permiso-no">No incluida</span></td><td><span class="permiso permiso-si">Incluida</span></td><td><span class="permiso permiso-si">Incluida</span></td></tr>
+                        <tr data-herramienta="rastro"><th scope="row">Rastro: lesiones de órganos</th><td><span class="permiso permiso-no">No incluida</span></td><td><span class="permiso permiso-no">No incluida</span></td><td><span class="permiso permiso-si">Incluida</span></td></tr>
+                        <tr data-herramienta="sanidad"><th scope="row">Sanidad y serología</th><td><span class="permiso permiso-no">No incluida</span></td><td><span class="permiso permiso-si">Incluida</span></td><td><span class="permiso permiso-si">Incluida</span></td></tr>
+                        <tr data-herramienta="fotos"><th scope="row">Fotos</th><td><span class="permiso permiso-no">No incluida</span></td><td><span class="permiso permiso-no">No incluida</span></td><td><span class="permiso permiso-si">Incluida</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="capitulo" id="cap-3" data-capitulo="3">
+            <h2><span class="num">3</span>Entrar</h2>
+            <figure class="captura"><img src="img/capturas/inicio-de-sesion.jpg?c=202611210702" alt="Pantalla de inicio de sesión de CHIBACH con los campos de correo y contraseña" loading="lazy" width="1600" height="1000"><figcaption>La pantalla de inicio de sesión.</figcaption></figure>
+            <h3>Iniciar sesión</h3>
+            <ol class="pasos-m">
+                <li>Abra CHIBACH en el navegador de la computadora o del celular. No hay nada que instalar.</li>
+                <li>Escriba el correo y la contraseña que le entregó la administración.</li>
+                <li>Presione <strong>Entrar</strong>. La primera pantalla depende de su perfil: la administración y la veterinaria ven el tablero; el representante ve su granja.</li>
+            </ol>
+            <h3 id="primer-ingreso">Primer ingreso y contraseña temporal</h3>
+            <p>La administración crea su cuenta y le entrega una contraseña temporal. Al entrar por primera vez, la aplicación le pide crear la suya antes de seguir.</p>
+            <figure class="captura"><img src="img/capturas/primer-ingreso.jpg?c=202611210702" alt="Pantalla Cree su contraseña, que aparece al entrar por primera vez" loading="lazy" width="1600" height="1000"><figcaption>La pantalla que aparece la primera vez.</figcaption></figure>
+            <ul class="vinetas-m">
+                <li>La contraseña nueva debe tener al menos 10 caracteres, con mayúsculas, minúsculas y números.</li>
+                <li>La contraseña temporal deja de servir en cuanto crea la suya.</li>
+            </ul>
+            <h3>Si olvidó su contraseña</h3>
+            <p>En la pantalla de inicio, escriba su correo y presione <strong>¿Olvidó su contraseña?</strong>. Si el correo está registrado, recibe un enlace para crear una nueva. Si no llega, pida a la administración de su empresa una contraseña temporal nueva.</p>
+            <div class="aviso aviso-ok"><p><strong>Quién da el acceso.</strong> Solo la administración da, suspende o elimina cuentas. Nadie puede crearse una por su cuenta.</p></div>
+        </section>
+
+        <section class="capitulo" id="cap-4" data-capitulo="4">
+            <h2><span class="num">4</span>Lo común a todas las pantallas</h2>
+            <ul class="vinetas-m">
+                <li><strong>El menú</strong> está a la izquierda en la computadora. En el celular se abre con el botón de arriba y se cierra al elegir una opción.</li>
+                <li><strong>El selector de granja</strong> aparece cuando su perfil tiene más de una. Lo que ve cambia según la granja elegida.</li>
+                <li><strong>Las tablas</strong> traen un cuadro para buscar, se ordenan al presionar el título de una columna y, en el celular, se muestran como tarjetas.</li>
+                <li><strong>Los gráficos</strong> traen arriba la pregunta que responden y, debajo, "Ver los datos en tabla" con los mismos números.</li>
+                <li><strong>Excel e imagen.</strong> Cada tabla se baja en Excel y cada gráfico en imagen o en Excel, según el plan de la línea.</li>
+                <li><strong>Avisos de colores</strong> siempre llevan también una palabra o un ícono: nunca se apoyan solo en el color.</li>
+                <li><strong>Corregir o eliminar</strong> un dato guardado pide siempre escribir el motivo.</li>
+            </ul>
+            <figure class="captura captura-cel"><img src="img/capturas/cel-menu.jpg?c=202611210702" alt="Menú de CHIBACH abierto en la pantalla de un celular" loading="lazy" width="780" height="1688"><figcaption>El menú en el celular.</figcaption></figure>
+        </section>
+
+        <section class="capitulo" id="cap-5" data-capitulo="5">
+            <h2><span class="num">5</span>Las pantallas, una por una</h2>
+            <p>De cada pantalla: qué muestra, quién la ve, qué se puede hacer y qué datos cambia.</p>
+
+            <article class="ficha-pantalla" id="pantalla-tablero">
+                <h3>Tablero</h3>
+                <figure class="captura"><img src="img/capturas/tablero-administradora.jpg?c=202611210702" alt="Tablero de la administradora con el semáforo por granja y los gráficos comparados" loading="lazy" width="1600" height="1000"><figcaption>El tablero de la administradora.</figcaption></figure>
+                <dl>
+                    <dt>Qué muestra</dt><dd>Con varias granjas, un semáforo por granja con palabra e ícono, y las granjas comparadas en gráficos. Con una granja, su semáforo de pendientes: mortalidad, retiros vigentes y vacunas atrasadas.</dd>
+                    <dt>Quién la ve</dt><dd>Todos. La administración ve todas las granjas; el representante, las suyas.</dd>
+                    <dt>Qué se puede hacer</dt><dd>Presionar una fila del semáforo para ir directo a lo que requiere atención.</dd>
+                    <dt>Qué datos cambia</dt><dd>Ninguno: solo consulta.</dd>
+                </dl>
+                <figure class="captura"><img src="img/capturas/tablero-veterinaria.jpg?c=202611210702" alt="Tablero de la veterinaria con partos de la semana, cerdas sin servicio, retiros vigentes y vacunas atrasadas" loading="lazy" width="1600" height="1000"><figcaption>El mismo tablero, visto por la veterinaria.</figcaption></figure>
+            </article>
+
+            <article class="ficha-pantalla" id="pantalla-comparativo">
+                <h3>Comparativo</h3>
+                <figure class="captura"><img src="img/capturas/comparativo.jpg?c=202611210702" alt="Comparativo de lotes lado a lado con sus cifras" loading="lazy" width="1600" height="1000"><figcaption>El comparativo de lotes.</figcaption></figure>
+                <dl>
+                    <dt>Qué muestra</dt><dd>Hasta 6 lotes a la vez, o los cruces genéticos, lado a lado, con sus sumas.</dd>
+                    <dt>Quién la ve</dt><dd>Todos, en los planes que incluyen el comparativo (Pro y Premium).</dd>
+                    <dt>Qué se puede hacer</dt><dd>Elegir los lotes o cambiar a la vista por cruce.</dd>
+                    <dt>Qué datos cambia</dt><dd>Ninguno.</dd>
+                </dl>
+            </article>
+
+            <article class="ficha-pantalla" id="pantalla-resumen">
+                <h3>Resumen de granjas</h3>
+                <dl>
+                    <dt>Qué muestra</dt><dd>Las cifras semanales de cada granja y línea, juntas, para ver cuál va mejor.</dd>
+                    <dt>Quién la ve</dt><dd>La administración de la empresa.</dd>
+                    <dt>Qué se puede hacer</dt><dd>Elegir la línea y presionar Actualizar para recalcular los resúmenes al momento. Además se actualizan solos todas las madrugadas.</dd>
+                    <dt>Qué datos cambia</dt><dd>Solo los resúmenes, que se vuelven a calcular. No toca ningún registro.</dd>
+                </dl>
+            </article>
+
+            <article class="ficha-pantalla" id="pantalla-granja">
+                <h3>Mis granjas y Mi granja</h3>
+                <figure class="captura"><img src="img/capturas/lotes.jpg?c=202611210702" alt="Línea de destete con sus naves, corrales y lote activo" loading="lazy" width="1600" height="1000"><figcaption>Una línea con sus naves, corrales y lotes.</figcaption></figure>
+                <dl>
+                    <dt>Qué muestra</dt><dd>La granja con sus líneas, naves, corrales y lotes. Es la pantalla desde la que se llega a cada lote y a Reproducción.</dd>
+                    <dt>Quién la ve</dt><dd>La administración ve "Mis granjas" (todas). El representante ve "Mi granja", la que tiene elegida.</dd>
+                    <dt>Qué se puede hacer</dt><dd>Crear y corregir fichas de línea, naves y corrales; iniciar, cerrar y reabrir lotes; abrir Reproducción, Alimento, Sanidad y Rastro.</dd>
+                    <dt>Qué datos cambia</dt><dd>Granjas, fichas de línea, naves, corrales y lotes.</dd>
+                </dl>
+            </article>
+
+            <article class="ficha-pantalla" id="pantalla-repro">
+                <h3>Reproducción y ficha de la cerda</h3>
+                <figure class="captura"><img src="img/capturas/cerdas.jpg?c=202611210702" alt="Lista de las cerdas de la granja con su situación, parto probable y alertas" loading="lazy" width="1600" height="1000"><figcaption>La lista de cerdas, con su situación y sus alertas.</figcaption></figure>
+                <dl>
+                    <dt>Qué muestra</dt><dd>Los indicadores del hato, las alertas ("Parto probable hoy", "Servida hace 28 días sin diagnóstico") y cada cerda con su situación: vacía, servida, gestante, lactando o baja.</dd>
+                    <dt>Quién la ve</dt><dd>Todos los perfiles de la granja.</dd>
+                    <dt>Qué se puede hacer</dt><dd>Registrar cerdas y verracos, y anotar en la ficha de cada cerda sus servicios, diagnósticos, partos, adopciones, muertes de lechones, destetes y bajas.</dd>
+                    <dt>Qué datos cambia</dt><dd>Cerdas, verracos y eventos de la cerda.</dd>
+                </dl>
+                <figure class="captura"><img src="img/capturas/ficha-cerda.jpg?c=202611210702" alt="Ficha de una cerda con su historial de eventos" loading="lazy" width="1600" height="1000"><figcaption>La ficha de una cerda, con su historial.</figcaption></figure>
+                <figure class="captura"><img src="img/capturas/parto-lleno.jpg?c=202611210702" alt="Formulario de parto lleno con nacidos vivos, nacidos muertos y peso de la camada" loading="lazy" width="1600" height="1000"><figcaption>El registro de un parto.</figcaption></figure>
+            </article>
+
+            <article class="ficha-pantalla" id="pantalla-lote">
+                <h3>Lote de destete o engorda</h3>
+                <figure class="captura"><img src="img/capturas/curva-lote.jpg?c=202611210702" alt="Gráfico del peso del lote contra la curva de su guía genética" loading="lazy" width="1600" height="1000"><figcaption>El peso del lote contra la guía de su genética.</figcaption></figure>
+                <dl>
+                    <dt>Qué muestra</dt><dd>La ficha del lote, sus indicadores (mortalidad, ganancia diaria, conversión, costo), el peso contra la curva de su guía, el registro de cada día, los pesajes, las ventas y los traslados.</dd>
+                    <dt>Quién la ve</dt><dd>Todos los perfiles de la granja.</dd>
+                    <dt>Qué se puede hacer</dt><dd>Anotar el registro del día, pesar, vender, trasladar cerdos y cerrar el lote. Mientras el retiro de un tratamiento siga vigente, "Registrar venta" queda cerrado.</dd>
+                    <dt>Qué datos cambia</dt><dd>Registros del día, pesajes, ventas, traslados y el estado del lote.</dd>
+                </dl>
+                <figure class="captura"><img src="img/capturas/venta-bloqueada.jpg?c=202611210702" alt="Lote de engorda con el aviso de retiro vigente y el botón Registrar venta cerrado" loading="lazy" width="1600" height="1000"><figcaption>El aviso de retiro vigente frena la venta.</figcaption></figure>
+            </article>
+
+            <article class="ficha-pantalla" id="pantalla-alimento">
+                <h3>Alimento</h3>
+                <figure class="captura"><img src="img/capturas/alimento.jpg?c=202611210702" alt="Compras de alimento de una granja con su costo por fase" loading="lazy" width="1600" height="1000"><figcaption>Compras de alimento y costo por fase.</figcaption></figure>
+                <dl>
+                    <dt>Qué muestra</dt><dd>Las compras de alimento de la granja y el costo por fase.</dd>
+                    <dt>Quién la ve</dt><dd>Todos los perfiles de la granja.</dd>
+                    <dt>Qué se puede hacer</dt><dd>Registrar, corregir y eliminar compras.</dd>
+                    <dt>Qué datos cambia</dt><dd>Compras de alimento; de ellas sale el costo por kilo que usan los lotes.</dd>
+                </dl>
+            </article>
+
+            <article class="ficha-pantalla" id="pantalla-sanidad">
+                <h3>Sanidad</h3>
+                <figure class="captura"><img src="img/capturas/aplicaciones-retiro.jpg?c=202611210702" alt="Aplicaciones de sanidad con sus días de retiro" loading="lazy" width="1600" height="1000"><figcaption>Aplicaciones y días de retiro.</figcaption></figure>
+                <dl>
+                    <dt>Qué muestra</dt><dd>Los retiros vigentes, las vacunas atrasadas y las de esta semana, los productos, el plan de vacunas, las aplicaciones, las serologías y las necropsias.</dd>
+                    <dt>Quién la ve</dt><dd>Todos los perfiles de la granja, en los planes que incluyen sanidad (Pro y Premium).</dd>
+                    <dt>Qué se puede hacer</dt><dd>Registrar productos, vacunas, aplicaciones, serologías y necropsias, con fotos.</dd>
+                    <dt>Qué datos cambia</dt><dd>Productos, plan de vacunas, aplicaciones, serologías y necropsias.</dd>
+                </dl>
+            </article>
+
+            <article class="ficha-pantalla" id="pantalla-rastro">
+                <h3>Rastro</h3>
+                <figure class="captura"><img src="img/capturas/rastro-diagrama.jpg?c=202611210702" alt="Mapa de calor del pulmón por lóbulos con los indicadores de un lote" loading="lazy" width="1600" height="1000"><figcaption>El mapa de calor del pulmón de un lote.</figcaption></figure>
+                <dl>
+                    <dt>Qué muestra</dt><dd>Las revisiones de lesiones hechas en la planta de sacrificio, el mapa de calor del pulmón por lóbulo, el resumen por lote y la pérdida estimada en dinero.</dd>
+                    <dt>Quién la ve</dt><dd>Todos los perfiles de la granja, en los planes que incluyen rastro (Premium).</dd>
+                    <dt>Qué se puede hacer</dt><dd>Registrar la revisión de una venta (también desde el celular), cerdo por cerdo, con fotos, y ajustar la configuración del rastro de la granja.</dd>
+                    <dt>Qué datos cambia</dt><dd>Revisiones de rastro, cerdos del rastro y configuración del rastro.</dd>
+                </dl>
+                <figure class="captura"><img src="img/capturas/rastro-perdida.jpg?c=202611210702" alt="Gráficos del rastro: lesión pulmonar entre lotes y pérdida estimada por lote en quetzales" loading="lazy" width="1600" height="1000"><figcaption>La lesión pulmonar entre lotes y la pérdida estimada.</figcaption></figure>
+            </article>
+
+            <article class="ficha-pantalla" id="pantalla-usuarios">
+                <h3>Usuarios</h3>
+                <dl>
+                    <dt>Qué muestra</dt><dd>Las cuentas de su empresa, con su nivel, sus granjas y su estado.</dd>
+                    <dt>Quién la ve</dt><dd>La administración de la empresa.</dd>
+                    <dt>Qué se puede hacer</dt><dd>Crear cuentas, asignar granjas, dar una contraseña temporal nueva, suspender, reactivar y eliminar.</dd>
+                    <dt>Qué datos cambia</dt><dd>Cuentas de usuario.</dd>
+                </dl>
+            </article>
+
+            <article class="ficha-pantalla" id="pantalla-plan">
+                <h3>Mi plan y pagos</h3>
+                <dl>
+                    <dt>Qué muestra</dt><dd>El plan, el tramo y el precio de cada línea, y los cobros con su vencimiento y su estado.</dd>
+                    <dt>Quién la ve</dt><dd>La administración de la empresa.</dd>
+                    <dt>Qué se puede hacer</dt><dd>Cotizar y cambiar el plan o el tramo de una línea. Los cobros se emiten cada 30 días, por el mes ya usado.</dd>
+                    <dt>Qué datos cambia</dt><dd>El plan y el tramo de las líneas. Los pagos los registra el equipo de CHIBACH.</dd>
+                </dl>
+            </article>
+
+            <article class="ficha-pantalla" id="pantalla-bitacora">
+                <h3>Bitácora de cambios</h3>
+                <figure class="captura"><img src="img/capturas/bitacora.jpg?c=202611210702" alt="Bitácora de cambios con quién cambió qué y cuándo" loading="lazy" width="1600" height="1000"><figcaption>La bitácora de cambios.</figcaption></figure>
+                <dl>
+                    <dt>Qué muestra</dt><dd>Cada cambio: qué se cambió, quién, cuándo y por qué.</dd>
+                    <dt>Quién la ve</dt><dd>Todos. La administración ve la de su empresa; el representante, la de sus granjas.</dd>
+                    <dt>Qué se puede hacer</dt><dd>Buscar y ordenar. No se puede corregir ni borrar: solo se agregan filas.</dd>
+                    <dt>Qué datos cambia</dt><dd>Ninguno: la bitácora se llena sola con cada cambio que se hace en la aplicación.</dd>
+                </dl>
+            </article>
+        </section>
+
+        <section class="capitulo" id="cap-6" data-capitulo="6">
+            <h2><span class="num">6</span>Formularios, campo por campo</h2>
+            <p>Cada tabla de datos con sus campos y lo que se escribe en cada uno. Los campos que dicen "calculado" o "automático" los llena la aplicación. Los números de identificación internos y las firmas de seguridad no se listan.</p>
+            <ul class="atajos">
+                <li><a class="enlace" href="#cap-10">Qué es cada tabla de datos</a></li>
+            </ul>
+            <details class="campos-tabla" id="campos-Empresas" open>
+                <summary>Empresas</summary>
+                <p class="para">Cada empresa cliente: su nombre, su contacto, su estado (activa o suspendida) y quién paga por ella.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Empresas.Nombre"><th scope="row">Nombre</th><td>Nombre de la empresa tal como la conoce su gente.</td></tr>
+                        <tr data-campo="Empresas.Contacto"><th scope="row">Contacto</th><td>Persona con quien se trata en la empresa.</td></tr>
+                        <tr data-campo="Empresas.NIT"><th scope="row">NIT</th><td>Número de identificación tributaria de la empresa.</td></tr>
+                        <tr data-campo="Empresas.Telefono"><th scope="row">Telefono</th><td>Teléfono de la empresa o de su contacto.</td></tr>
+                        <tr data-campo="Empresas.Email"><th scope="row">Email</th><td>Correo de la empresa.</td></tr>
+                        <tr data-campo="Empresas.Estado"><th scope="row">Estado</th><td>Activa o Suspendida. Una empresa suspendida solo puede consultar, no registrar.</td></tr>
+                        <tr data-campo="Empresas.FechaAlta"><th scope="row">FechaAlta</th><td>Fecha en que la empresa empezó a usar CHIBACH.</td></tr>
+                        <tr data-campo="Empresas.Notas"><th scope="row">Notas</th><td>Notas internas sobre la empresa.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Duenos" open>
+                <summary>Dueños</summary>
+                <p class="para">Quien paga el servicio: la persona que administra una o varias empresas, con sus datos de cobro y la fecha desde la que se cuentan sus ciclos de 30 días.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Duenos.Nombre"><th scope="row">Nombre</th><td>Nombre de quien paga el servicio.</td></tr>
+                        <tr data-campo="Duenos.NIT"><th scope="row">NIT</th><td>Número de identificación tributaria de quien paga.</td></tr>
+                        <tr data-campo="Duenos.Contacto"><th scope="row">Contacto</th><td>Persona con quien se trata el cobro.</td></tr>
+                        <tr data-campo="Duenos.Telefono"><th scope="row">Telefono</th><td>Teléfono para el cobro.</td></tr>
+                        <tr data-campo="Duenos.Email"><th scope="row">Email</th><td>Correo para enviar los cobros.</td></tr>
+                        <tr data-campo="Duenos.Estado"><th scope="row">Estado</th><td>Activo o Suspendido.</td></tr>
+                        <tr data-campo="Duenos.FechaAlta"><th scope="row">FechaAlta</th><td>Fecha desde la que se cuentan sus ciclos de cobro de 30 días.</td></tr>
+                        <tr data-campo="Duenos.Notas"><th scope="row">Notas</th><td>Notas sobre el cobro.</td></tr>
+                        <tr data-campo="Duenos.PrecioFijoDesde"><th scope="row">PrecioFijoDesde</th><td>Fecha desde la que rige el precio por tramo contratado.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-EmpresasDueno" open>
+                <summary>Empresas de cada dueño</summary>
+                <p class="para">De qué dueño fue cada empresa y desde cuándo, para cobrarle a cada uno solo sus días.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="EmpresasDueno.Desde"><th scope="row">Desde</th><td>Fecha desde la que la empresa pertenece a ese dueño.</td></tr>
+                        <tr data-campo="EmpresasDueno.Hasta"><th scope="row">Hasta</th><td>Fecha en que dejó de pertenecerle; vacía si todavía le pertenece.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Usuarios" open>
+                <summary>Usuarios</summary>
+                <p class="para">Las cuentas de la gente: nombre, correo, nivel de acceso, granjas asignadas, estado y si debe cambiar la contraseña temporal.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Usuarios.Nombre"><th scope="row">Nombre</th><td>Nombre de la persona.</td></tr>
+                        <tr data-campo="Usuarios.Email"><th scope="row">Email</th><td>Correo con el que entra. Es su usuario.</td></tr>
+                        <tr data-campo="Usuarios.Rol"><th scope="row">Rol</th><td>Administración de la empresa o Representante de granja.</td></tr>
+                        <tr data-campo="Usuarios.GranjaIDs"><th scope="row">GranjaIDs</th><td>Granjas en las que trabaja un representante; la administración de la empresa trabaja en todas.</td></tr>
+                        <tr data-campo="Usuarios.Telefono"><th scope="row">Telefono</th><td>Teléfono de la persona.</td></tr>
+                        <tr data-campo="Usuarios.Estado"><th scope="row">Estado</th><td>Activo o Suspendido. Una persona suspendida no puede entrar.</td></tr>
+                        <tr data-campo="Usuarios.DebeCambiarClave"><th scope="row">DebeCambiarClave</th><td>Si todavía debe cambiar la contraseña temporal al entrar.</td></tr>
+                        <tr data-campo="Usuarios.ClaveTemporalEn"><th scope="row">ClaveTemporalEn</th><td>Fecha y hora en que se le dio la contraseña temporal.</td></tr>
+                        <tr data-campo="Usuarios.FechaCreacion"><th scope="row">FechaCreacion</th><td>Fecha en que se creó la cuenta.</td></tr>
+                        <tr data-campo="Usuarios.CreadoPor"><th scope="row">CreadoPor</th><td>Quién creó la cuenta.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Granjas" open>
+                <summary>Granjas</summary>
+                <p class="para">Cada granja de la empresa: nombre, propietario, ubicación, contacto y estado.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Granjas.NombreGranja"><th scope="row">NombreGranja</th><td>Nombre de la granja.</td></tr>
+                        <tr data-campo="Granjas.Propietario"><th scope="row">Propietario</th><td>Persona dueña o responsable de la granja.</td></tr>
+                        <tr data-campo="Granjas.Ubicacion"><th scope="row">Ubicacion</th><td>Municipio, departamento o dirección de la granja.</td></tr>
+                        <tr data-campo="Granjas.Telefono"><th scope="row">Telefono</th><td>Teléfono de la granja.</td></tr>
+                        <tr data-campo="Granjas.EmailContacto"><th scope="row">EmailContacto</th><td>Correo de contacto de la granja.</td></tr>
+                        <tr data-campo="Granjas.Estado"><th scope="row">Estado</th><td>Activa o Suspendida.</td></tr>
+                        <tr data-campo="Granjas.FechaAlta"><th scope="row">FechaAlta</th><td>Fecha en que se dio de alta la granja.</td></tr>
+                        <tr data-campo="Granjas.Notas"><th scope="row">Notas</th><td>Notas sobre la granja.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Perfiles" open>
+                <summary>Fichas de línea</summary>
+                <p class="para">La ficha de cada línea de producción de cada granja. Que la ficha esté activa es lo que hace aparecer la línea.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Perfiles.Linea"><th scope="row">Linea</th><td>Línea de producción a la que pertenece: Reproducción, Destete o Engorda.</td></tr>
+                        <tr data-campo="Perfiles.Estado"><th scope="row">Estado</th><td>Activa, Suspendida o Eliminada. Que la ficha de la línea esté activa es lo que hace aparecer la línea en la granja.</td></tr>
+                        <tr data-campo="Perfiles.Responsable"><th scope="row">Responsable</th><td>Persona encargada de esa línea.</td></tr>
+                        <tr data-campo="Perfiles.Capacidad"><th scope="row">Capacidad</th><td>Cuántos cerdos o cerdas caben en la línea.</td></tr>
+                        <tr data-campo="Perfiles.SistemaAlojamiento"><th scope="row">SistemaAlojamiento</th><td>Cómo se alojan los cerdos: confinamiento, semiconfinamiento, cama profunda o al aire libre.</td></tr>
+                        <tr data-campo="Perfiles.Notas"><th scope="row">Notas</th><td>Notas sobre la línea.</td></tr>
+                        <tr data-campo="Perfiles.FechaCreacion"><th scope="row">FechaCreacion</th><td>Fecha en que se creó la ficha.</td></tr>
+                        <tr data-campo="Perfiles.ActualizadoEn"><th scope="row">ActualizadoEn</th><td>Fecha y hora de la última corrección.</td></tr>
+                        <tr data-campo="Perfiles.ActualizadoPor"><th scope="row">ActualizadoPor</th><td>Quién hizo la última corrección.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Naves" open>
+                <summary>Naves</summary>
+                <p class="para">Las naves de cada línea de la granja, con su estado.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Naves.Linea"><th scope="row">Linea</th><td>Línea de producción a la que pertenece: Reproducción, Destete o Engorda.</td></tr>
+                        <tr data-campo="Naves.Nombre"><th scope="row">Nombre</th><td>Nombre de la nave, por ejemplo &quot;Nave de destete&quot;.</td></tr>
+                        <tr data-campo="Naves.Estado"><th scope="row">Estado</th><td>Activa o Inactiva. Una nave inactiva no recibe lotes nuevos.</td></tr>
+                        <tr data-campo="Naves.FechaCreacion"><th scope="row">FechaCreacion</th><td>Fecha en que se creó la nave.</td></tr>
+                        <tr data-campo="Naves.CreadoPor"><th scope="row">CreadoPor</th><td>Quién creó la nave.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Corrales" open>
+                <summary>Corrales</summary>
+                <p class="para">Los corrales de cada nave: para qué se usan, cuántos cerdos caben y cuánto miden.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Corrales.Linea"><th scope="row">Linea</th><td>Línea de producción a la que pertenece: Reproducción, Destete o Engorda.</td></tr>
+                        <tr data-campo="Corrales.Nombre"><th scope="row">Nombre</th><td>Nombre del corral, por ejemplo &quot;Corral 1&quot;.</td></tr>
+                        <tr data-campo="Corrales.Estado"><th scope="row">Estado</th><td>Activo o Inactivo.</td></tr>
+                        <tr data-campo="Corrales.FechaCreacion"><th scope="row">FechaCreacion</th><td>Fecha en que se creó el corral.</td></tr>
+                        <tr data-campo="Corrales.CreadoPor"><th scope="row">CreadoPor</th><td>Quién creó el corral.</td></tr>
+                        <tr data-campo="Corrales.Tipo"><th scope="row">Tipo</th><td>Para qué se usa: gestación individual o grupal, maternidad, destete, engorda, verracos o cuarentena.</td></tr>
+                        <tr data-campo="Corrales.Capacidad"><th scope="row">Capacidad</th><td>Cuántos cerdos caben en el corral.</td></tr>
+                        <tr data-campo="Corrales.AreaM2"><th scope="row">AreaM2</th><td>Superficie del corral, en metros cuadrados.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Lotes" open>
+                <summary>Lotes</summary>
+                <p class="para">Los lotes de destete y engorda: número, fecha de inicio, cerdos que entraron, peso y edad de entrada, origen, costo, genética y cierre.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Lotes.Linea"><th scope="row">Linea</th><td>Destete o Engorda: solo estas dos líneas trabajan por lotes.</td></tr>
+                        <tr data-campo="Lotes.NumeroLote"><th scope="row">NumeroLote</th><td>Número o nombre del lote, tal como lo rotula en el corral.</td></tr>
+                        <tr data-campo="Lotes.FechaInicio"><th scope="row">FechaInicio</th><td>Día en que entraron los cerdos al lote.</td></tr>
+                        <tr data-campo="Lotes.CerdosIniciales"><th scope="row">CerdosIniciales</th><td>Cuántos cerdos entraron. Es la suma de los que entraron a cada corral.</td></tr>
+                        <tr data-campo="Lotes.PesoInicialKg"><th scope="row">PesoInicialKg</th><td>Peso promedio de entrada, en kilos.</td></tr>
+                        <tr data-campo="Lotes.EdadInicialDias"><th scope="row">EdadInicialDias</th><td>Edad de los cerdos al entrar, en días. Con ella se calcula la edad del lote cada día.</td></tr>
+                        <tr data-campo="Lotes.Origen"><th scope="row">Origen</th><td>De dónde vienen: destete propio, compra o traslado desde otro lote.</td></tr>
+                        <tr data-campo="Lotes.CostoPorCerdo"><th scope="row">CostoPorCerdo</th><td>Lo que costó cada cerdo al entrar. Con él se calcula el costo del lote.</td></tr>
+                        <tr data-campo="Lotes.GeneticaMadre"><th scope="row">GeneticaMadre</th><td>Línea genética de la madre.</td></tr>
+                        <tr data-campo="Lotes.GeneticaPadre"><th scope="row">GeneticaPadre</th><td>Línea genética del padre. Madre y padre forman el cruce que se compara con la guía.</td></tr>
+                        <tr data-campo="Lotes.Estado"><th scope="row">Estado</th><td>Activo o Cerrado.</td></tr>
+                        <tr data-campo="Lotes.FechaCierre"><th scope="row">FechaCierre</th><td>Día en que se cerró el lote; vacía mientras siga abierto.</td></tr>
+                        <tr data-campo="Lotes.Registro"><th scope="row">Registro</th><td>Si el registro diario se anota por corral o por lote completo.</td></tr>
+                        <tr data-campo="Lotes.RegistroDesde"><th scope="row">RegistroDesde</th><td>Fecha desde la que rige esa forma de registrar.</td></tr>
+                        <tr data-campo="Lotes.Sexo"><th scope="row">Sexo</th><td>Mixto, castrados, hembras o machos enteros. Elige la curva de la guía.</td></tr>
+                        <tr data-campo="Lotes.Guia"><th scope="row">Guia</th><td>Guía genética con la que se compara el peso del lote; vacía si se usa la del cruce.</td></tr>
+                        <tr data-campo="Lotes.CreadoPor"><th scope="row">CreadoPor</th><td>Quién lo registró (nombre y usuario).</td></tr>
+                        <tr data-campo="Lotes.CreadoEn"><th scope="row">CreadoEn</th><td>Fecha y hora en que se registró.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-LoteCorrales" open>
+                <summary>Corrales de cada lote</summary>
+                <p class="para">Los corrales que ocupa cada lote: cuántos cerdos entraron a cada uno, desde cuándo y, si salió antes del cierre, cuándo y con cuántos.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="LoteCorrales.CerdosIniciales"><th scope="row">CerdosIniciales</th><td>Cuántos cerdos del lote entraron a ese corral.</td></tr>
+                        <tr data-campo="LoteCorrales.Desde"><th scope="row">Desde</th><td>Día en que el lote ocupó el corral.</td></tr>
+                        <tr data-campo="LoteCorrales.Hasta"><th scope="row">Hasta</th><td>Día en que el corral quedó libre; vacío si todavía lo ocupa.</td></tr>
+                        <tr data-campo="LoteCorrales.CerdosSalida"><th scope="row">CerdosSalida</th><td>Cuántos cerdos se llevó el lote al salir de ese corral.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Cerdas" open>
+                <summary>Cerdas</summary>
+                <p class="para">Cada cerda de la granja: arete, genética, fechas de nacimiento y de entrada, origen y partos con los que llegó.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Cerdas.Arete"><th scope="row">Arete</th><td>Número del arete de la cerda. Es su nombre en la granja.</td></tr>
+                        <tr data-campo="Cerdas.Genetica"><th scope="row">Genetica</th><td>Línea genética de la cerda.</td></tr>
+                        <tr data-campo="Cerdas.FechaNacimiento"><th scope="row">FechaNacimiento</th><td>Fecha en que nació la cerda.</td></tr>
+                        <tr data-campo="Cerdas.FechaEntrada"><th scope="row">FechaEntrada</th><td>Fecha en que entró a la granja.</td></tr>
+                        <tr data-campo="Cerdas.Origen"><th scope="row">Origen</th><td>Reemplazo propio o compra.</td></tr>
+                        <tr data-campo="Cerdas.PartoInicial"><th scope="row">PartoInicial</th><td>Cuántos partos traía cuando entró; las cerdas de reemplazo propio empiezan en 0.</td></tr>
+                        <tr data-campo="Cerdas.Notas"><th scope="row">Notas</th><td>Notas sobre la cerda.</td></tr>
+                        <tr data-campo="Cerdas.Estado"><th scope="row">Estado</th><td>Si el registro está vigente o se eliminó. Lo eliminado deja de contarse en las cifras, pero el cambio queda en la bitácora.</td></tr>
+                        <tr data-campo="Cerdas.CreadoPor"><th scope="row">CreadoPor</th><td>Quién lo registró (nombre y usuario).</td></tr>
+                        <tr data-campo="Cerdas.CreadoEn"><th scope="row">CreadoEn</th><td>Fecha y hora en que se registró.</td></tr>
+                        <tr data-campo="Cerdas.ActualizadoEn"><th scope="row">ActualizadoEn</th><td>Fecha y hora de la última corrección.</td></tr>
+                        <tr data-campo="Cerdas.ActualizadoPor"><th scope="row">ActualizadoPor</th><td>Quién hizo la última corrección.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Verracos" open>
+                <summary>Verracos</summary>
+                <p class="para">Cada verraco: arete, genética, fecha de entrada y estado.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Verracos.Arete"><th scope="row">Arete</th><td>Número del arete del verraco.</td></tr>
+                        <tr data-campo="Verracos.Genetica"><th scope="row">Genetica</th><td>Línea genética del verraco.</td></tr>
+                        <tr data-campo="Verracos.FechaEntrada"><th scope="row">FechaEntrada</th><td>Fecha en que entró a la granja.</td></tr>
+                        <tr data-campo="Verracos.Estado"><th scope="row">Estado</th><td>Activo o Inactivo.</td></tr>
+                        <tr data-campo="Verracos.CreadoPor"><th scope="row">CreadoPor</th><td>Quién lo registró (nombre y usuario).</td></tr>
+                        <tr data-campo="Verracos.CreadoEn"><th scope="row">CreadoEn</th><td>Fecha y hora en que se registró.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-EventosRepro" open>
+                <summary>Eventos de la cerda</summary>
+                <p class="para">Todo lo que le pasa a una cerda: servicios, diagnósticos, partos, adopciones, muertes de lechones, destetes y bajas. De aquí salen la situación y las alertas de cada cerda.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="EventosRepro.Tipo"><th scope="row">Tipo</th><td>Qué le pasó a la cerda: servicio, diagnóstico de gestación, parto, adopción, muerte de lechón, destete o baja.</td></tr>
+                        <tr data-campo="EventosRepro.Fecha"><th scope="row">Fecha</th><td>Día en que ocurrió.</td></tr>
+                        <tr data-campo="EventosRepro.Metodo"><th scope="row">Metodo</th><td>En el servicio: monta natural o inseminación.</td></tr>
+                        <tr data-campo="EventosRepro.GeneticaSemen"><th scope="row">GeneticaSemen</th><td>En el servicio: línea genética del semen o del verraco.</td></tr>
+                        <tr data-campo="EventosRepro.Resultado"><th scope="row">Resultado</th><td>En el diagnóstico: positivo o negativo.</td></tr>
+                        <tr data-campo="EventosRepro.NacidosVivos"><th scope="row">NacidosVivos</th><td>En el parto: lechones nacidos vivos.</td></tr>
+                        <tr data-campo="EventosRepro.NacidosMuertos"><th scope="row">NacidosMuertos</th><td>En el parto: lechones nacidos muertos.</td></tr>
+                        <tr data-campo="EventosRepro.Momias"><th scope="row">Momias</th><td>En el parto: fetos momificados.</td></tr>
+                        <tr data-campo="EventosRepro.PesoCamadaKg"><th scope="row">PesoCamadaKg</th><td>En el parto: peso de toda la camada, en kilos.</td></tr>
+                        <tr data-campo="EventosRepro.Cantidad"><th scope="row">Cantidad</th><td>En la adopción o la muerte de lechones: cuántos lechones.</td></tr>
+                        <tr data-campo="EventosRepro.Sentido"><th scope="row">Sentido</th><td>En la adopción: si los lechones entran a la cerda o salen de ella.</td></tr>
+                        <tr data-campo="EventosRepro.Causa"><th scope="row">Causa</th><td>En la muerte de lechones: aplastamiento, bajo peso, diarrea u otra causa.</td></tr>
+                        <tr data-campo="EventosRepro.Destetados"><th scope="row">Destetados</th><td>En el destete: lechones destetados.</td></tr>
+                        <tr data-campo="EventosRepro.PesoDesteteKg"><th scope="row">PesoDesteteKg</th><td>En el destete: peso de la camada, en kilos.</td></tr>
+                        <tr data-campo="EventosRepro.Motivo"><th scope="row">Motivo</th><td>En la baja: descarte, muerte o venta.</td></tr>
+                        <tr data-campo="EventosRepro.Notas"><th scope="row">Notas</th><td>Notas del evento.</td></tr>
+                        <tr data-campo="EventosRepro.Estado"><th scope="row">Estado</th><td>Si el registro está vigente o se eliminó. Lo eliminado deja de contarse en las cifras, pero el cambio queda en la bitácora.</td></tr>
+                        <tr data-campo="EventosRepro.CreadoPor"><th scope="row">CreadoPor</th><td>Quién lo registró (nombre y usuario).</td></tr>
+                        <tr data-campo="EventosRepro.CreadoEn"><th scope="row">CreadoEn</th><td>Fecha y hora en que se registró.</td></tr>
+                        <tr data-campo="EventosRepro.ActualizadoEn"><th scope="row">ActualizadoEn</th><td>Fecha y hora de la última corrección.</td></tr>
+                        <tr data-campo="EventosRepro.ActualizadoPor"><th scope="row">ActualizadoPor</th><td>Quién hizo la última corrección.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-RegistrosLote" open>
+                <summary>Registros del día</summary>
+                <p class="para">El registro del día de cada lote: muertes con su causa, cerdos eliminados, alimento en kilos, fase y observaciones.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="RegistrosLote.Linea"><th scope="row">Linea</th><td>Línea de producción a la que pertenece: Reproducción, Destete o Engorda.</td></tr>
+                        <tr data-campo="RegistrosLote.NumeroLote"><th scope="row">NumeroLote</th><td>Número o nombre del lote, tal como lo rotula en el corral.</td></tr>
+                        <tr data-campo="RegistrosLote.Fecha"><th scope="row">Fecha</th><td>Día al que corresponde el registro.</td></tr>
+                        <tr data-campo="RegistrosLote.Muertes"><th scope="row">Muertes</th><td>Cerdos muertos ese día.</td></tr>
+                        <tr data-campo="RegistrosLote.CausaMuerte"><th scope="row">CausaMuerte</th><td>Causa de las muertes: problema respiratorio, diarrea, prolapso, mordedura de cola u otra.</td></tr>
+                        <tr data-campo="RegistrosLote.Eliminados"><th scope="row">Eliminados</th><td>Cerdos sacados del lote ese día por descarte, sin contarlos como muertos.</td></tr>
+                        <tr data-campo="RegistrosLote.AlimentoKg"><th scope="row">AlimentoKg</th><td>Alimento que comieron ese día, en kilos.</td></tr>
+                        <tr data-campo="RegistrosLote.FaseAlimento"><th scope="row">FaseAlimento</th><td>Fase del alimento: preiniciador, iniciador, crecimiento, desarrollo o finalizador.</td></tr>
+                        <tr data-campo="RegistrosLote.Signos"><th scope="row">Signos</th><td>Lo que se observó en los cerdos: tos, diarrea, cojeras.</td></tr>
+                        <tr data-campo="RegistrosLote.Observaciones"><th scope="row">Observaciones</th><td>Cualquier otra novedad del corral.</td></tr>
+                        <tr data-campo="RegistrosLote.Estado"><th scope="row">Estado</th><td>Si el registro está vigente o se eliminó. Lo eliminado deja de contarse en las cifras, pero el cambio queda en la bitácora.</td></tr>
+                        <tr data-campo="RegistrosLote.CreadoPor"><th scope="row">CreadoPor</th><td>Quién lo registró (nombre y usuario).</td></tr>
+                        <tr data-campo="RegistrosLote.CreadoEn"><th scope="row">CreadoEn</th><td>Fecha y hora en que se registró.</td></tr>
+                        <tr data-campo="RegistrosLote.ActualizadoEn"><th scope="row">ActualizadoEn</th><td>Fecha y hora de la última corrección.</td></tr>
+                        <tr data-campo="RegistrosLote.ActualizadoPor"><th scope="row">ActualizadoPor</th><td>Quién hizo la última corrección.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Pesajes" open>
+                <summary>Pesajes</summary>
+                <p class="para">Cada pesaje de un lote: el peso de cada cerdo de la muestra, y de ahí el promedio, el mínimo, el máximo y la uniformidad.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Pesajes.Linea"><th scope="row">Linea</th><td>Línea de producción a la que pertenece: Reproducción, Destete o Engorda.</td></tr>
+                        <tr data-campo="Pesajes.NumeroLote"><th scope="row">NumeroLote</th><td>Número o nombre del lote, tal como lo rotula en el corral.</td></tr>
+                        <tr data-campo="Pesajes.Fecha"><th scope="row">Fecha</th><td>Día del pesaje.</td></tr>
+                        <tr data-campo="Pesajes.Pesos"><th scope="row">Pesos</th><td>Peso de cada cerdo pesado, en kilos, separados por coma. Con ellos se calculan el promedio, el mínimo, el máximo y la uniformidad.</td></tr>
+                        <tr data-campo="Pesajes.Notas"><th scope="row">Notas</th><td>Notas del pesaje.</td></tr>
+                        <tr data-campo="Pesajes.Estado"><th scope="row">Estado</th><td>Si el registro está vigente o se eliminó. Lo eliminado deja de contarse en las cifras, pero el cambio queda en la bitácora.</td></tr>
+                        <tr data-campo="Pesajes.CreadoPor"><th scope="row">CreadoPor</th><td>Quién lo registró (nombre y usuario).</td></tr>
+                        <tr data-campo="Pesajes.CreadoEn"><th scope="row">CreadoEn</th><td>Fecha y hora en que se registró.</td></tr>
+                        <tr data-campo="Pesajes.ActualizadoEn"><th scope="row">ActualizadoEn</th><td>Fecha y hora de la última corrección.</td></tr>
+                        <tr data-campo="Pesajes.ActualizadoPor"><th scope="row">ActualizadoPor</th><td>Quién hizo la última corrección.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Ventas" open>
+                <summary>Ventas</summary>
+                <p class="para">Cada venta de cerdos: cuántos, kilos, precio, base del precio y comprador.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Ventas.Linea"><th scope="row">Linea</th><td>Línea de producción a la que pertenece: Reproducción, Destete o Engorda.</td></tr>
+                        <tr data-campo="Ventas.NumeroLote"><th scope="row">NumeroLote</th><td>Número o nombre del lote, tal como lo rotula en el corral.</td></tr>
+                        <tr data-campo="Ventas.Fecha"><th scope="row">Fecha</th><td>Día de la venta.</td></tr>
+                        <tr data-campo="Ventas.Cerdos"><th scope="row">Cerdos</th><td>Cuántos cerdos se vendieron.</td></tr>
+                        <tr data-campo="Ventas.KgEnPie"><th scope="row">KgEnPie</th><td>Kilos vendidos en pie.</td></tr>
+                        <tr data-campo="Ventas.KgCanal"><th scope="row">KgCanal</th><td>Kilos vendidos en canal.</td></tr>
+                        <tr data-campo="Ventas.BasePrecio"><th scope="row">BasePrecio</th><td>Si el precio es por kilo en pie o en canal.</td></tr>
+                        <tr data-campo="Ventas.PrecioPorKg"><th scope="row">PrecioPorKg</th><td>Precio pagado por cada kilo.</td></tr>
+                        <tr data-campo="Ventas.Comprador"><th scope="row">Comprador</th><td>A quién se le vendió.</td></tr>
+                        <tr data-campo="Ventas.Notas"><th scope="row">Notas</th><td>Notas de la venta.</td></tr>
+                        <tr data-campo="Ventas.Estado"><th scope="row">Estado</th><td>Si el registro está vigente o se eliminó. Lo eliminado deja de contarse en las cifras, pero el cambio queda en la bitácora.</td></tr>
+                        <tr data-campo="Ventas.CreadoPor"><th scope="row">CreadoPor</th><td>Quién lo registró (nombre y usuario).</td></tr>
+                        <tr data-campo="Ventas.CreadoEn"><th scope="row">CreadoEn</th><td>Fecha y hora en que se registró.</td></tr>
+                        <tr data-campo="Ventas.ActualizadoEn"><th scope="row">ActualizadoEn</th><td>Fecha y hora de la última corrección.</td></tr>
+                        <tr data-campo="Ventas.ActualizadoPor"><th scope="row">ActualizadoPor</th><td>Quién hizo la última corrección.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Traslados" open>
+                <summary>Traslados</summary>
+                <p class="para">Los cerdos que pasan de un lote a otro, dentro de una granja o entre granjas. Cada traslado deja una salida y una entrada.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Traslados.Linea"><th scope="row">Linea</th><td>Línea de producción a la que pertenece: Reproducción, Destete o Engorda.</td></tr>
+                        <tr data-campo="Traslados.NumeroLote"><th scope="row">NumeroLote</th><td>Número o nombre del lote, tal como lo rotula en el corral.</td></tr>
+                        <tr data-campo="Traslados.Fecha"><th scope="row">Fecha</th><td>Día del traslado.</td></tr>
+                        <tr data-campo="Traslados.Sentido"><th scope="row">Sentido</th><td>Si los cerdos salen de este lote o entran a él.</td></tr>
+                        <tr data-campo="Traslados.Cerdos"><th scope="row">Cerdos</th><td>Cuántos cerdos se trasladaron.</td></tr>
+                        <tr data-campo="Traslados.PesoPromedioKg"><th scope="row">PesoPromedioKg</th><td>Peso promedio de los cerdos trasladados, en kilos.</td></tr>
+                        <tr data-campo="Traslados.CostoPorCerdo"><th scope="row">CostoPorCerdo</th><td>Lo que costó cada cerdo; pasa al lote que los recibe.</td></tr>
+                        <tr data-campo="Traslados.Inicial"><th scope="row">Inicial</th><td>Si el traslado es la entrada con la que empezó el lote.</td></tr>
+                        <tr data-campo="Traslados.Notas"><th scope="row">Notas</th><td>Notas del traslado.</td></tr>
+                        <tr data-campo="Traslados.Estado"><th scope="row">Estado</th><td>Si el registro está vigente o se eliminó. Lo eliminado deja de contarse en las cifras, pero el cambio queda en la bitácora.</td></tr>
+                        <tr data-campo="Traslados.CreadoPor"><th scope="row">CreadoPor</th><td>Quién lo registró (nombre y usuario).</td></tr>
+                        <tr data-campo="Traslados.CreadoEn"><th scope="row">CreadoEn</th><td>Fecha y hora en que se registró.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-ComprasAlimento" open>
+                <summary>Compras de alimento</summary>
+                <p class="para">Cada compra de alimento: fase, proveedor, días que cubre, quintales y costo. Con ella se calcula el costo por kilo del alimento.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="ComprasAlimento.Fase"><th scope="row">Fase</th><td>Fase del alimento comprado.</td></tr>
+                        <tr data-campo="ComprasAlimento.Proveedor"><th scope="row">Proveedor</th><td>Quién vendió el alimento.</td></tr>
+                        <tr data-campo="ComprasAlimento.Desde"><th scope="row">Desde</th><td>Primer día que cubre la compra.</td></tr>
+                        <tr data-campo="ComprasAlimento.Hasta"><th scope="row">Hasta</th><td>Último día que cubre la compra.</td></tr>
+                        <tr data-campo="ComprasAlimento.Quintales"><th scope="row">Quintales</th><td>Quintales comprados.</td></tr>
+                        <tr data-campo="ComprasAlimento.CostoPorQuintal"><th scope="row">CostoPorQuintal</th><td>Lo que costó cada quintal.</td></tr>
+                        <tr data-campo="ComprasAlimento.Comentarios"><th scope="row">Comentarios</th><td>Notas de la compra.</td></tr>
+                        <tr data-campo="ComprasAlimento.Estado"><th scope="row">Estado</th><td>Si el registro está vigente o se eliminó. Lo eliminado deja de contarse en las cifras, pero el cambio queda en la bitácora.</td></tr>
+                        <tr data-campo="ComprasAlimento.CreadoPor"><th scope="row">CreadoPor</th><td>Quién lo registró (nombre y usuario).</td></tr>
+                        <tr data-campo="ComprasAlimento.CreadoEn"><th scope="row">CreadoEn</th><td>Fecha y hora en que se registró.</td></tr>
+                        <tr data-campo="ComprasAlimento.ActualizadoEn"><th scope="row">ActualizadoEn</th><td>Fecha y hora de la última corrección.</td></tr>
+                        <tr data-campo="ComprasAlimento.ActualizadoPor"><th scope="row">ActualizadoPor</th><td>Quién hizo la última corrección.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Productos" open>
+                <summary>Productos sanitarios</summary>
+                <p class="para">Los productos sanitarios de la granja: vacunas, antibióticos y otros, con su dosis, su vía y sus días de retiro.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Productos.Nombre"><th scope="row">Nombre</th><td>Nombre del producto: vacuna, antibiótico o desparasitante.</td></tr>
+                        <tr data-campo="Productos.Tipo"><th scope="row">Tipo</th><td>Vacuna, antibiótico, antiparasitario u otro tipo de producto.</td></tr>
+                        <tr data-campo="Productos.Enfermedades"><th scope="row">Enfermedades</th><td>Enfermedades para las que se usa.</td></tr>
+                        <tr data-campo="Productos.Via"><th scope="row">Via</th><td>Cómo se aplica: inyectable, oral u otra.</td></tr>
+                        <tr data-campo="Productos.Dosis"><th scope="row">Dosis</th><td>Dosis habitual.</td></tr>
+                        <tr data-campo="Productos.Unidad"><th scope="row">Unidad</th><td>Unidad de la dosis: mililitros, gramos u otra.</td></tr>
+                        <tr data-campo="Productos.RetiroDias"><th scope="row">RetiroDias</th><td>Días que deben pasar después de aplicarlo para poder vender el cerdo.</td></tr>
+                        <tr data-campo="Productos.Fuente"><th scope="row">Fuente</th><td>De dónde sale el dato del retiro: la etiqueta o el fabricante.</td></tr>
+                        <tr data-campo="Productos.Notas"><th scope="row">Notas</th><td>Notas sobre el producto.</td></tr>
+                        <tr data-campo="Productos.Estado"><th scope="row">Estado</th><td>Activo, Inactivo o Eliminado. Un producto inactivo ya no se ofrece al aplicar.</td></tr>
+                        <tr data-campo="Productos.CreadoPor"><th scope="row">CreadoPor</th><td>Quién lo registró (nombre y usuario).</td></tr>
+                        <tr data-campo="Productos.CreadoEn"><th scope="row">CreadoEn</th><td>Fecha y hora en que se registró.</td></tr>
+                        <tr data-campo="Productos.ActualizadoEn"><th scope="row">ActualizadoEn</th><td>Fecha y hora de la última corrección.</td></tr>
+                        <tr data-campo="Productos.ActualizadoPor"><th scope="row">ActualizadoPor</th><td>Quién hizo la última corrección.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-PlanVacunas" open>
+                <summary>Plan de vacunas</summary>
+                <p class="para">El plan de vacunas de cada línea: qué vacuna toca y cuántos días después de qué fecha.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="PlanVacunas.Linea"><th scope="row">Linea</th><td>Línea de producción a la que pertenece: Reproducción, Destete o Engorda.</td></tr>
+                        <tr data-campo="PlanVacunas.Referencia"><th scope="row">Referencia</th><td>De qué fecha cuenta el plan: nacimiento, destete, entrada al lote, servicio o parto.</td></tr>
+                        <tr data-campo="PlanVacunas.Dias"><th scope="row">Dias</th><td>Cuántos días después de esa fecha toca la vacuna.</td></tr>
+                        <tr data-campo="PlanVacunas.SoloPrimerizas"><th scope="row">SoloPrimerizas</th><td>Si la vacuna es solo para las cerdas primerizas.</td></tr>
+                        <tr data-campo="PlanVacunas.Notas"><th scope="row">Notas</th><td>Notas del plan.</td></tr>
+                        <tr data-campo="PlanVacunas.Estado"><th scope="row">Estado</th><td>Si el registro está vigente o se eliminó. Lo eliminado deja de contarse en las cifras, pero el cambio queda en la bitácora.</td></tr>
+                        <tr data-campo="PlanVacunas.CreadoPor"><th scope="row">CreadoPor</th><td>Quién lo registró (nombre y usuario).</td></tr>
+                        <tr data-campo="PlanVacunas.CreadoEn"><th scope="row">CreadoEn</th><td>Fecha y hora en que se registró.</td></tr>
+                        <tr data-campo="PlanVacunas.ActualizadoEn"><th scope="row">ActualizadoEn</th><td>Fecha y hora de la última corrección.</td></tr>
+                        <tr data-campo="PlanVacunas.ActualizadoPor"><th scope="row">ActualizadoPor</th><td>Quién hizo la última corrección.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Aplicaciones" open>
+                <summary>Aplicaciones</summary>
+                <p class="para">Cada aplicación de un producto a una cerda o a un lote. De sus días de retiro sale la fecha segura de venta.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Aplicaciones.Linea"><th scope="row">Linea</th><td>Línea de producción a la que pertenece: Reproducción, Destete o Engorda.</td></tr>
+                        <tr data-campo="Aplicaciones.Objetivo"><th scope="row">Objetivo</th><td>A quién se aplicó: una cerda o un lote.</td></tr>
+                        <tr data-campo="Aplicaciones.Arete"><th scope="row">Arete</th><td>Arete de la cerda tratada, si la aplicación fue a una cerda.</td></tr>
+                        <tr data-campo="Aplicaciones.NumeroLote"><th scope="row">NumeroLote</th><td>Lote tratado, si la aplicación fue a un lote.</td></tr>
+                        <tr data-campo="Aplicaciones.Fecha"><th scope="row">Fecha</th><td>Día de la aplicación.</td></tr>
+                        <tr data-campo="Aplicaciones.Producto"><th scope="row">Producto</th><td>Nombre del producto aplicado.</td></tr>
+                        <tr data-campo="Aplicaciones.Dosis"><th scope="row">Dosis</th><td>Dosis aplicada.</td></tr>
+                        <tr data-campo="Aplicaciones.Unidad"><th scope="row">Unidad</th><td>Unidad de la dosis.</td></tr>
+                        <tr data-campo="Aplicaciones.Via"><th scope="row">Via</th><td>Cómo se aplicó.</td></tr>
+                        <tr data-campo="Aplicaciones.LoteProducto"><th scope="row">LoteProducto</th><td>Número de lote del frasco, para rastrearlo.</td></tr>
+                        <tr data-campo="Aplicaciones.DiasTratamiento"><th scope="row">DiasTratamiento</th><td>Cuántos días duró el tratamiento.</td></tr>
+                        <tr data-campo="Aplicaciones.Cerdos"><th scope="row">Cerdos</th><td>Cuántos cerdos se trataron, si fue a un lote.</td></tr>
+                        <tr data-campo="Aplicaciones.RetiroDias"><th scope="row">RetiroDias</th><td>Días de retiro de esta aplicación. Con ellos se calcula la fecha segura de venta.</td></tr>
+                        <tr data-campo="Aplicaciones.Motivo"><th scope="row">Motivo</th><td>Por qué se aplicó.</td></tr>
+                        <tr data-campo="Aplicaciones.Notas"><th scope="row">Notas</th><td>Notas de la aplicación.</td></tr>
+                        <tr data-campo="Aplicaciones.Estado"><th scope="row">Estado</th><td>Si el registro está vigente o se eliminó. Lo eliminado deja de contarse en las cifras, pero el cambio queda en la bitácora.</td></tr>
+                        <tr data-campo="Aplicaciones.CreadoPor"><th scope="row">CreadoPor</th><td>Quién lo registró (nombre y usuario).</td></tr>
+                        <tr data-campo="Aplicaciones.CreadoEn"><th scope="row">CreadoEn</th><td>Fecha y hora en que se registró.</td></tr>
+                        <tr data-campo="Aplicaciones.ActualizadoEn"><th scope="row">ActualizadoEn</th><td>Fecha y hora de la última corrección.</td></tr>
+                        <tr data-campo="Aplicaciones.ActualizadoPor"><th scope="row">ActualizadoPor</th><td>Quién hizo la última corrección.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Serologias" open>
+                <summary>Serologías</summary>
+                <p class="para">Cada muestreo de laboratorio: enfermedad, prueba, resultado de cada cerdo y resumen del muestreo.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Serologias.Linea"><th scope="row">Linea</th><td>Línea de producción a la que pertenece: Reproducción, Destete o Engorda.</td></tr>
+                        <tr data-campo="Serologias.Objetivo"><th scope="row">Objetivo</th><td>Qué se muestreó: cerdas o un lote.</td></tr>
+                        <tr data-campo="Serologias.NumeroLote"><th scope="row">NumeroLote</th><td>Lote muestreado, si fue un lote.</td></tr>
+                        <tr data-campo="Serologias.Fecha"><th scope="row">Fecha</th><td>Día en que se tomó la muestra.</td></tr>
+                        <tr data-campo="Serologias.Enfermedad"><th scope="row">Enfermedad</th><td>Enfermedad que se busca.</td></tr>
+                        <tr data-campo="Serologias.Prueba"><th scope="row">Prueba</th><td>Prueba de laboratorio usada.</td></tr>
+                        <tr data-campo="Serologias.Muestra"><th scope="row">Muestra</th><td>Cuántos cerdos se muestrearon.</td></tr>
+                        <tr data-campo="Serologias.Laboratorio"><th scope="row">Laboratorio</th><td>Laboratorio que hizo el análisis.</td></tr>
+                        <tr data-campo="Serologias.Corte"><th scope="row">Corte</th><td>Valor desde el cual el laboratorio da el resultado como positivo.</td></tr>
+                        <tr data-campo="Serologias.PositivoSi"><th scope="row">PositivoSi</th><td>Si es positivo cuando el valor queda por encima o por debajo del corte.</td></tr>
+                        <tr data-campo="Serologias.Valores"><th scope="row">Valores</th><td>Resultado de cada cerdo muestreado.</td></tr>
+                        <tr data-campo="Serologias.Aretes"><th scope="row">Aretes</th><td>Aretes de las cerdas muestreadas, en el mismo orden de los valores.</td></tr>
+                        <tr data-campo="Serologias.Comentarios"><th scope="row">Comentarios</th><td>Notas del muestreo.</td></tr>
+                        <tr data-campo="Serologias.Estado"><th scope="row">Estado</th><td>Si el registro está vigente o se eliminó. Lo eliminado deja de contarse en las cifras, pero el cambio queda en la bitácora.</td></tr>
+                        <tr data-campo="Serologias.CreadoPor"><th scope="row">CreadoPor</th><td>Quién lo registró (nombre y usuario).</td></tr>
+                        <tr data-campo="Serologias.CreadoEn"><th scope="row">CreadoEn</th><td>Fecha y hora en que se registró.</td></tr>
+                        <tr data-campo="Serologias.ActualizadoEn"><th scope="row">ActualizadoEn</th><td>Fecha y hora de la última corrección.</td></tr>
+                        <tr data-campo="Serologias.ActualizadoPor"><th scope="row">ActualizadoPor</th><td>Quién hizo la última corrección.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Necropsias" open>
+                <summary>Necropsias</summary>
+                <p class="para">Cada necropsia: lo que se encontró, el diagnóstico y las muestras enviadas al laboratorio.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Necropsias.Linea"><th scope="row">Linea</th><td>Línea de producción a la que pertenece: Reproducción, Destete o Engorda.</td></tr>
+                        <tr data-campo="Necropsias.Objetivo"><th scope="row">Objetivo</th><td>A quién se le hizo: una cerda o un cerdo de un lote.</td></tr>
+                        <tr data-campo="Necropsias.Arete"><th scope="row">Arete</th><td>Arete de la cerda, si fue una cerda.</td></tr>
+                        <tr data-campo="Necropsias.NumeroLote"><th scope="row">NumeroLote</th><td>Lote del cerdo, si fue de un lote.</td></tr>
+                        <tr data-campo="Necropsias.Fecha"><th scope="row">Fecha</th><td>Día de la necropsia.</td></tr>
+                        <tr data-campo="Necropsias.PesoKg"><th scope="row">PesoKg</th><td>Peso del animal, en kilos.</td></tr>
+                        <tr data-campo="Necropsias.Sistemas"><th scope="row">Sistemas</th><td>Sistemas revisados: respiratorio, digestivo y otros.</td></tr>
+                        <tr data-campo="Necropsias.Hallazgos"><th scope="row">Hallazgos</th><td>Lo que se encontró al abrir el animal.</td></tr>
+                        <tr data-campo="Necropsias.Diagnostico"><th scope="row">Diagnostico</th><td>Diagnóstico presuntivo.</td></tr>
+                        <tr data-campo="Necropsias.MuestrasEnviadas"><th scope="row">MuestrasEnviadas</th><td>Muestras que se mandaron al laboratorio.</td></tr>
+                        <tr data-campo="Necropsias.Responsable"><th scope="row">Responsable</th><td>Quién hizo la necropsia.</td></tr>
+                        <tr data-campo="Necropsias.Estado"><th scope="row">Estado</th><td>Si el registro está vigente o se eliminó. Lo eliminado deja de contarse en las cifras, pero el cambio queda en la bitácora.</td></tr>
+                        <tr data-campo="Necropsias.CreadoPor"><th scope="row">CreadoPor</th><td>Quién lo registró (nombre y usuario).</td></tr>
+                        <tr data-campo="Necropsias.CreadoEn"><th scope="row">CreadoEn</th><td>Fecha y hora en que se registró.</td></tr>
+                        <tr data-campo="Necropsias.ActualizadoEn"><th scope="row">ActualizadoEn</th><td>Fecha y hora de la última corrección.</td></tr>
+                        <tr data-campo="Necropsias.ActualizadoPor"><th scope="row">ActualizadoPor</th><td>Quién hizo la última corrección.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Rastros" open>
+                <summary>Revisiones de rastro</summary>
+                <p class="para">Cada revisión de lesiones en la planta de sacrificio, ligada a la venta de un lote.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Rastros.Linea"><th scope="row">Linea</th><td>Línea de producción a la que pertenece: Reproducción, Destete o Engorda.</td></tr>
+                        <tr data-campo="Rastros.NumeroLote"><th scope="row">NumeroLote</th><td>Número o nombre del lote, tal como lo rotula en el corral.</td></tr>
+                        <tr data-campo="Rastros.Fecha"><th scope="row">Fecha</th><td>Día de la revisión en la planta de sacrificio.</td></tr>
+                        <tr data-campo="Rastros.Rastro"><th scope="row">Rastro</th><td>Nombre de la planta de sacrificio.</td></tr>
+                        <tr data-campo="Rastros.Inspector"><th scope="row">Inspector</th><td>Quién hizo la inspección.</td></tr>
+                        <tr data-campo="Rastros.Comentarios"><th scope="row">Comentarios</th><td>Notas de la revisión.</td></tr>
+                        <tr data-campo="Rastros.Estado"><th scope="row">Estado</th><td>Si el registro está vigente o se eliminó. Lo eliminado deja de contarse en las cifras, pero el cambio queda en la bitácora.</td></tr>
+                        <tr data-campo="Rastros.CreadoPor"><th scope="row">CreadoPor</th><td>Quién lo registró (nombre y usuario).</td></tr>
+                        <tr data-campo="Rastros.CreadoEn"><th scope="row">CreadoEn</th><td>Fecha y hora en que se registró.</td></tr>
+                        <tr data-campo="Rastros.ActualizadoEn"><th scope="row">ActualizadoEn</th><td>Fecha y hora de la última corrección.</td></tr>
+                        <tr data-campo="Rastros.ActualizadoPor"><th scope="row">ActualizadoPor</th><td>Quién hizo la última corrección.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-RastroCerdos" open>
+                <summary>Cerdos del rastro</summary>
+                <p class="para">Cada cerdo revisado en el rastro: puntaje de cada lóbulo del pulmón, pleura, corazón, hígado y otras lesiones.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="RastroCerdos.Numero"><th scope="row">Numero</th><td>Número del cerdo dentro de la revisión.</td></tr>
+                        <tr data-campo="RastroCerdos.Lobulos"><th scope="row">Lobulos</th><td>Puntaje de 0 a 4 de cada lóbulo del pulmón, separados por coma.</td></tr>
+                        <tr data-campo="RastroCerdos.SPES"><th scope="row">SPES</th><td>Pleuresía del cerdo, de 0 a 4.</td></tr>
+                        <tr data-campo="RastroCerdos.Pericarditis"><th scope="row">Pericarditis</th><td>Si el corazón tiene pericarditis.</td></tr>
+                        <tr data-campo="RastroCerdos.Higado"><th scope="row">Higado</th><td>Manchas del hígado: ninguna, pocas o muchas.</td></tr>
+                        <tr data-campo="RastroCerdos.Ulcera"><th scope="row">Ulcera</th><td>Estado del estómago: normal, paraqueratosis, erosiones o úlcera.</td></tr>
+                        <tr data-campo="RastroCerdos.Rinitis"><th scope="row">Rinitis</th><td>Rinitis: normal, leve, moderada o grave.</td></tr>
+                        <tr data-campo="RastroCerdos.Abscesos"><th scope="row">Abscesos</th><td>Si tiene abscesos.</td></tr>
+                        <tr data-campo="RastroCerdos.Cicatrices"><th scope="row">Cicatrices</th><td>Si tiene cicatrices.</td></tr>
+                        <tr data-campo="RastroCerdos.Comentario"><th scope="row">Comentario</th><td>Notas sobre este cerdo.</td></tr>
+                        <tr data-campo="RastroCerdos.Estado"><th scope="row">Estado</th><td>Si el registro está vigente o se eliminó. Lo eliminado deja de contarse en las cifras, pero el cambio queda en la bitácora.</td></tr>
+                        <tr data-campo="RastroCerdos.CreadoPor"><th scope="row">CreadoPor</th><td>Quién lo registró (nombre y usuario).</td></tr>
+                        <tr data-campo="RastroCerdos.CreadoEn"><th scope="row">CreadoEn</th><td>Fecha y hora en que se registró.</td></tr>
+                        <tr data-campo="RastroCerdos.ActualizadoEn"><th scope="row">ActualizadoEn</th><td>Fecha y hora de la última corrección.</td></tr>
+                        <tr data-campo="RastroCerdos.ActualizadoPor"><th scope="row">ActualizadoPor</th><td>Quién hizo la última corrección.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Fotos" open>
+                <summary>Fotos</summary>
+                <p class="para">Las fotos de necropsias y de rastro: tamaño, descripción y quién las subió. Solo las ve quien ve la granja.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Fotos.Entidad"><th scope="row">Entidad</th><td>A qué registro pertenece la foto: necropsia, revisión de rastro o cerdo del rastro.</td></tr>
+                        <tr data-campo="Fotos.Linea"><th scope="row">Linea</th><td>Línea de producción a la que pertenece: Reproducción, Destete o Engorda.</td></tr>
+                        <tr data-campo="Fotos.Tipo"><th scope="row">Tipo</th><td>Formato de la imagen.</td></tr>
+                        <tr data-campo="Fotos.Ancho"><th scope="row">Ancho</th><td>Ancho de la foto, en puntos de pantalla.</td></tr>
+                        <tr data-campo="Fotos.Alto"><th scope="row">Alto</th><td>Alto de la foto, en puntos de pantalla.</td></tr>
+                        <tr data-campo="Fotos.Bytes"><th scope="row">Bytes</th><td>Peso de la foto completa.</td></tr>
+                        <tr data-campo="Fotos.BytesMiniatura"><th scope="row">BytesMiniatura</th><td>Peso de la miniatura.</td></tr>
+                        <tr data-campo="Fotos.Huella"><th scope="row">Huella</th><td>Código único de la foto, para detectar que no se cambió.</td></tr>
+                        <tr data-campo="Fotos.Descripcion"><th scope="row">Descripcion</th><td>Lo que muestra la foto, escrito por quien la tomó.</td></tr>
+                        <tr data-campo="Fotos.Estado"><th scope="row">Estado</th><td>Si el registro está vigente o se eliminó. Una foto eliminada deja de verse.</td></tr>
+                        <tr data-campo="Fotos.CreadoPor"><th scope="row">CreadoPor</th><td>Quién lo registró (nombre y usuario).</td></tr>
+                        <tr data-campo="Fotos.CreadoEn"><th scope="row">CreadoEn</th><td>Fecha y hora en que se registró.</td></tr>
+                        <tr data-campo="Fotos.ActualizadoEn"><th scope="row">ActualizadoEn</th><td>Fecha y hora de la última corrección.</td></tr>
+                        <tr data-campo="Fotos.ActualizadoPor"><th scope="row">ActualizadoPor</th><td>Quién hizo la última corrección.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-RastroConfig" open>
+                <summary>Configuración del rastro</summary>
+                <p class="para">La configuración del rastro de cada granja: cerdos por revisar en cada venta y cuánta ganancia se pierde por cada 10 % de pulmón afectado.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="RastroConfig.Pesos"><th scope="row">Pesos</th><td>Tabla que se usa para pesar cada lóbulo del pulmón al calcular el porcentaje afectado.</td></tr>
+                        <tr data-campo="RastroConfig.GdpPor10Pct"><th scope="row">GdpPor10Pct</th><td>Porcentaje de ganancia diaria que se pierde por cada 10 % de pulmón afectado. Con él se estima la pérdida en dinero.</td></tr>
+                        <tr data-campo="RastroConfig.MuestraMinima"><th scope="row">MuestraMinima</th><td>Cuántos cerdos conviene revisar en cada venta; con menos, el resultado se marca como orientativo.</td></tr>
+                        <tr data-campo="RastroConfig.ActualizadoEn"><th scope="row">ActualizadoEn</th><td>Fecha y hora de la última corrección.</td></tr>
+                        <tr data-campo="RastroConfig.ActualizadoPor"><th scope="row">ActualizadoPor</th><td>Quién hizo la última corrección.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Listas" open>
+                <summary>Listas desplegables</summary>
+                <p class="para">Los valores de las listas desplegables: países, genética, causas de baja y de muerte, fases del alimento, enfermedades y siglas.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Listas.Tipo"><th scope="row">Tipo</th><td>Qué lista es: países, sistemas de alojamiento, genética, causas de baja o de muerte, fases del alimento, enfermedades o siglas.</td></tr>
+                        <tr data-campo="Listas.Valor"><th scope="row">Valor</th><td>El texto que aparece en la lista desplegable.</td></tr>
+                        <tr data-campo="Listas.Orden"><th scope="row">Orden</th><td>Posición del valor dentro de la lista.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Bitacora" open>
+                <summary>Bitácora</summary>
+                <p class="para">Cada cambio: qué se cambió, quién, cuándo y por qué. Solo se agregan filas, nunca se borran.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Bitacora.Entidad"><th scope="row">Entidad</th><td>Qué se cambió: empresa, granja, lote, cerda, venta y otros.</td></tr>
+                        <tr data-campo="Bitacora.Accion"><th scope="row">Accion</th><td>Qué se hizo: crear, corregir o eliminar.</td></tr>
+                        <tr data-campo="Bitacora.Detalle"><th scope="row">Detalle</th><td>Qué valores cambiaron.</td></tr>
+                        <tr data-campo="Bitacora.Justificacion"><th scope="row">Justificacion</th><td>Motivo que escribió quien hizo el cambio.</td></tr>
+                        <tr data-campo="Bitacora.ModificadoPor"><th scope="row">ModificadoPor</th><td>Quién lo hizo.</td></tr>
+                        <tr data-campo="Bitacora.Fecha"><th scope="row">Fecha</th><td>Fecha y hora del cambio.</td></tr>
+                        <tr data-campo="Bitacora.HashPrevio"><th scope="row">HashPrevio</th><td>Código del cambio anterior, que encadena la bitácora.</td></tr>
+                        <tr data-campo="Bitacora.Hash"><th scope="row">Hash</th><td>Código de este cambio. Si alguien altera la bitácora, la cadena deja de coincidir.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Accesos" open>
+                <summary>Accesos</summary>
+                <p class="para">Cada ingreso y cada intento rechazado: fecha, correo y resultado.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Accesos.Fecha"><th scope="row">Fecha</th><td>Fecha y hora del intento de ingreso.</td></tr>
+                        <tr data-campo="Accesos.Email"><th scope="row">Email</th><td>Correo con el que se intentó entrar.</td></tr>
+                        <tr data-campo="Accesos.Accion"><th scope="row">Accion</th><td>Qué se intentó: ingresar u otra acción de la cuenta.</td></tr>
+                        <tr data-campo="Accesos.Resultado"><th scope="row">Resultado</th><td>Si se permitió o se rechazó, y por qué.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Planes" open>
+                <summary>Planes</summary>
+                <p class="para">Los planes (Básico, Pro y Premium) y las herramientas que trae cada uno.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Planes.Nombre"><th scope="row">Nombre</th><td>Nombre del plan: Básico, Pro o Premium.</td></tr>
+                        <tr data-campo="Planes.Orden"><th scope="row">Orden</th><td>Posición del plan en la lista.</td></tr>
+                        <tr data-campo="Planes.Herramientas"><th scope="row">Herramientas</th><td>Herramientas que trae el plan.</td></tr>
+                        <tr data-campo="Planes.Estado"><th scope="row">Estado</th><td>Activo o Inactivo.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Tramos" open>
+                <summary>Tramos</summary>
+                <p class="para">Los tramos de tamaño de cada línea: de cuántas cerdas o cuántos cerdos a cuántos.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Tramos.Desde"><th scope="row">Desde</th><td>Primer número de cerdos del tramo.</td></tr>
+                        <tr data-campo="Tramos.Hasta"><th scope="row">Hasta</th><td>Último número de cerdos del tramo; vacío en el último, que es a la medida.</td></tr>
+                        <tr data-campo="Tramos.Orden"><th scope="row">Orden</th><td>Posición del tramo en la tabla de precios.</td></tr>
+                        <tr data-campo="Tramos.Unidad"><th scope="row">Unidad</th><td>Qué se cuenta: cerdas en producción o cerdos vivos.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Precios" open>
+                <summary>Precios</summary>
+                <p class="para">El precio al mes, en dólares, de cada plan en cada tramo.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Precios.PrecioUSD"><th scope="row">PrecioUSD</th><td>Precio al mes, en dólares de Estados Unidos, de un plan en un tramo.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-LineasPlan" open>
+                <summary>Planes de las líneas</summary>
+                <p class="para">El plan y el tramo de cada línea de cada granja, con el historial de cambios.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="LineasPlan.Linea"><th scope="row">Linea</th><td>Línea de producción a la que pertenece: Reproducción, Destete o Engorda.</td></tr>
+                        <tr data-campo="LineasPlan.Desde"><th scope="row">Desde</th><td>Día desde el que rige ese plan y tramo.</td></tr>
+                        <tr data-campo="LineasPlan.Hasta"><th scope="row">Hasta</th><td>Día en que dejó de regir; vacío si es el vigente.</td></tr>
+                        <tr data-campo="LineasPlan.PrecioManual"><th scope="row">PrecioManual</th><td>Precio acordado a la medida cuando la línea pasa del último tramo.</td></tr>
+                        <tr data-campo="LineasPlan.CreadoPor"><th scope="row">CreadoPor</th><td>Quién lo registró (nombre y usuario).</td></tr>
+                        <tr data-campo="LineasPlan.CreadoEn"><th scope="row">CreadoEn</th><td>Fecha y hora en que se registró.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Cobros" open>
+                <summary>Cobros</summary>
+                <p class="para">Un cobro por dueño y ciclo de 30 días, con el detalle por empresa, granja y línea, el total y el vencimiento.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Cobros.Periodo"><th scope="row">Periodo</th><td>Número del ciclo de cobro: 1, 2, 3…</td></tr>
+                        <tr data-campo="Cobros.Desde"><th scope="row">Desde</th><td>Primer día del ciclo.</td></tr>
+                        <tr data-campo="Cobros.Hasta"><th scope="row">Hasta</th><td>Último día del ciclo.</td></tr>
+                        <tr data-campo="Cobros.Vence"><th scope="row">Vence</th><td>Fecha límite de pago.</td></tr>
+                        <tr data-campo="Cobros.ProrrogaHasta"><th scope="row">ProrrogaHasta</th><td>Nueva fecha límite si se concedió una prórroga.</td></tr>
+                        <tr data-campo="Cobros.Detalle"><th scope="row">Detalle</th><td>Cuánto corresponde a cada empresa, granja y línea.</td></tr>
+                        <tr data-campo="Cobros.Total"><th scope="row">Total</th><td>Total a pagar del ciclo, en dólares.</td></tr>
+                        <tr data-campo="Cobros.Estado"><th scope="row">Estado</th><td>Pendiente, pagado o vencido.</td></tr>
+                        <tr data-campo="Cobros.EmitidoEn"><th scope="row">EmitidoEn</th><td>Fecha y hora en que se emitió el cobro.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Pagos" open>
+                <summary>Pagos</summary>
+                <p class="para">Cada pago recibido: cobro al que corresponde, fecha, monto, medio y referencia.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Pagos.Fecha"><th scope="row">Fecha</th><td>Día en que se recibió el pago.</td></tr>
+                        <tr data-campo="Pagos.Monto"><th scope="row">Monto</th><td>Monto recibido, en dólares.</td></tr>
+                        <tr data-campo="Pagos.Medio"><th scope="row">Medio</th><td>Cómo se pagó: transferencia, enlace de pago u otro.</td></tr>
+                        <tr data-campo="Pagos.Referencia"><th scope="row">Referencia</th><td>Número de la transferencia o del comprobante.</td></tr>
+                        <tr data-campo="Pagos.Notas"><th scope="row">Notas</th><td>Notas del pago.</td></tr>
+                        <tr data-campo="Pagos.Estado"><th scope="row">Estado</th><td>Vigente o anulado.</td></tr>
+                        <tr data-campo="Pagos.RegistradoPor"><th scope="row">RegistradoPor</th><td>Quién registró el pago.</td></tr>
+                        <tr data-campo="Pagos.CreadoEn"><th scope="row">CreadoEn</th><td>Fecha y hora en que se registró.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Resumen" open>
+                <summary>Resumen diario de la granja</summary>
+                <p class="para">En el archivo de cada granja: sus cifras por línea y día, que alimentan el Resumen de granjas.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Resumen.Clave"><th scope="row">Clave</th><td>Identificador de la línea y el día.</td></tr>
+                        <tr data-campo="Resumen.Linea"><th scope="row">Linea</th><td>Línea de producción a la que pertenece: Reproducción, Destete o Engorda.</td></tr>
+                        <tr data-campo="Resumen.Fecha"><th scope="row">Fecha</th><td>Día al que corresponde el resumen.</td></tr>
+                        <tr data-campo="Resumen.LotesAbiertos"><th scope="row">LotesAbiertos</th><td>Cuántos lotes estaban abiertos ese día.</td></tr>
+                        <tr data-campo="Resumen.Animales"><th scope="row">Animales</th><td>Cuántos cerdos o cerdas había ese día.</td></tr>
+                        <tr data-campo="Resumen.ActualizadoEn"><th scope="row">ActualizadoEn</th><td>Fecha y hora de la última actualización.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Resumenes" open>
+                <summary>Resúmenes semanales</summary>
+                <p class="para">El resumen semanal de cada granja y línea, con el que se arma el Resumen de granjas.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Resumenes.NombreGranja"><th scope="row">NombreGranja</th><td>Nombre de la granja.</td></tr>
+                        <tr data-campo="Resumenes.Linea"><th scope="row">Linea</th><td>Línea de producción a la que pertenece: Reproducción, Destete o Engorda.</td></tr>
+                        <tr data-campo="Resumenes.Semanas"><th scope="row">Semanas</th><td>Cifras de cada semana de la línea, para el Resumen de granjas.</td></tr>
+                        <tr data-campo="Resumenes.Ultimo"><th scope="row">Ultimo</th><td>Cifras más recientes de la línea.</td></tr>
+                        <tr data-campo="Resumenes.ConsolidadoEn"><th scope="row">ConsolidadoEn</th><td>Fecha y hora de la última actualización.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Consolidacion" open>
+                <summary>Actualizaciones del resumen</summary>
+                <p class="para">Cada actualización del Resumen de granjas: cuándo, quién, cuántas granjas y si hubo errores.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Consolidacion.Origen"><th scope="row">Origen</th><td>Qué la inició: el botón Actualizar o la tarea de madrugada.</td></tr>
+                        <tr data-campo="Consolidacion.Por"><th scope="row">Por</th><td>Quién la inició.</td></tr>
+                        <tr data-campo="Consolidacion.Inicio"><th scope="row">Inicio</th><td>Hora en que empezó.</td></tr>
+                        <tr data-campo="Consolidacion.Fin"><th scope="row">Fin</th><td>Hora en que terminó.</td></tr>
+                        <tr data-campo="Consolidacion.Granjas"><th scope="row">Granjas</th><td>Cuántas granjas incluía.</td></tr>
+                        <tr data-campo="Consolidacion.Leidas"><th scope="row">Leidas</th><td>Cuántas se actualizaron bien.</td></tr>
+                        <tr data-campo="Consolidacion.Errores"><th scope="row">Errores</th><td>Cuántas fallaron.</td></tr>
+                        <tr data-campo="Consolidacion.Estado"><th scope="row">Estado</th><td>En curso, terminada o con errores.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-Configuracion" open>
+                <summary>Configuración</summary>
+                <p class="para">Los valores que se ajustan en la plataforma: días de aviso y de gracia, referencias de los gráficos y metas de mortalidad.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="Configuracion.Clave"><th scope="row">Clave</th><td>Qué valor se ajusta.</td></tr>
+                        <tr data-campo="Configuracion.Valor"><th scope="row">Valor</th><td>Valor elegido, dentro del rango permitido.</td></tr>
+                        <tr data-campo="Configuracion.ActualizadoEn"><th scope="row">ActualizadoEn</th><td>Fecha y hora de la última corrección.</td></tr>
+                        <tr data-campo="Configuracion.ActualizadoPor"><th scope="row">ActualizadoPor</th><td>Quién hizo la última corrección.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+            <details class="campos-tabla" id="campos-UsoSemanal" open>
+                <summary>Uso semanal</summary>
+                <p class="para">El espacio que usa cada granja cada semana, para avisar con tiempo antes de que se llene.</p>
+                <div class="tabla-m-wrap"><table class="tabla-m">
+                    <thead><tr><th scope="col">Campo</th><th scope="col">Qué escribir o qué guarda</th></tr></thead>
+                    <tbody>
+                        <tr data-campo="UsoSemanal.Semana"><th scope="row">Semana</th><td>Lunes de la semana medida.</td></tr>
+                        <tr data-campo="UsoSemanal.Archivo"><th scope="row">Archivo</th><td>De qué se midió el espacio: el archivo central o el de una granja.</td></tr>
+                        <tr data-campo="UsoSemanal.Celdas"><th scope="row">Celdas</th><td>Cuánto espacio de datos usa.</td></tr>
+                        <tr data-campo="UsoSemanal.Fotos"><th scope="row">Fotos</th><td>Cuántas fotos guarda.</td></tr>
+                        <tr data-campo="UsoSemanal.BytesFotos"><th scope="row">BytesFotos</th><td>Espacio que ocupan las fotos.</td></tr>
+                        <tr data-campo="UsoSemanal.MedidoEn"><th scope="row">MedidoEn</th><td>Fecha y hora de la medición.</td></tr>
+                    </tbody>
+                </table></div>
+            </details>
+        </section>
+
+        <section class="capitulo" id="cap-7" data-capitulo="7">
+            <h2><span class="num">7</span>Lo que calcula solo</h2>
+            <p>Estas cifras no se escriben: la aplicación las calcula cada vez que abre la pantalla. Cada una trae su fórmula en palabras y un ejemplo con números de la empresa de ejemplo.</p>
+            <h3>Reproducción</h3>
+            <article class="indicador">
+                <h4>Fecha probable de parto</h4>
+                <p class="formula">Se toma el primer servicio del celo y se le suman 114 días.</p>
+                <p class="ejemplo">La cerda <strong>C-103</strong> se sirvió el <strong>6 de septiembre de 2026</strong>. 6 de septiembre de 2026 más 114 días da el <strong>29 de diciembre de 2026</strong>.</p>
+            </article>
+            <article class="indicador">
+                <h4>Situación de la cerda</h4>
+                <p class="formula">Se lee de su último evento: vacía si destetó o entró y no tiene servicio, servida si tiene servicio sin diagnóstico, gestante si el diagnóstico fue positivo, lactando si parió y no se ha destetado, y baja si salió.</p>
+                <p class="ejemplo">La cerda <strong>C-101</strong> parió y no se ha destetado: está <strong>lactando</strong> desde hace <strong>19</strong> días, con <strong>11</strong> lechones vivos.</p>
+            </article>
+            <article class="indicador">
+                <h4>Partos por cerda al año</h4>
+                <p class="formula">Partos del período por 365, entre los días que las cerdas estuvieron activas (cerdas-día).</p>
+                <p class="ejemplo"><strong>75</strong> partos × 365 ÷ <strong>12,345</strong> cerdas-día = <strong>2.22</strong> partos por cerda al año.</p>
+            </article>
+            <article class="indicador">
+                <h4>Destetados por cerda al año</h4>
+                <p class="formula">Lechones destetados del período por 365, entre las cerdas-día.</p>
+                <p class="ejemplo"><strong>767</strong> destetados × 365 ÷ <strong>12,345</strong> cerdas-día = <strong>22.7</strong> destetados por cerda al año.</p>
+            </article>
+            <article class="indicador">
+                <h4>Días no productivos por cerda al año</h4>
+                <p class="formula">A las cerdas-día se les restan los días de gestación productiva y los de lactancia; lo que queda, por 365, entre las cerdas-día.</p>
+                <p class="ejemplo">12,345 − 9,512 − 1,758 = <strong>1,075</strong> días no productivos. 1,075 × 365 ÷ 12,345 = <strong>31.8</strong> días por cerda al año.</p>
+            </article>
+            <article class="indicador">
+                <h4>Tasa de parto</h4>
+                <p class="formula">De los celos servidos que ya no pueden parir, el porcentaje que terminó en parto.</p>
+                <p class="ejemplo"><strong>73</strong> partos de <strong>85</strong> celos = <strong>85.9 %</strong>.</p>
+            </article>
+            <article class="indicador">
+                <h4>Intervalo destete-servicio</h4>
+                <p class="formula">Suma de los días entre el destete de cada cerda y su siguiente servicio, entre el número de cerdas contadas.</p>
+                <p class="ejemplo"><strong>442</strong> días entre <strong>66</strong> cerdas = <strong>6.7</strong> días.</p>
+            </article>
+            <article class="indicador">
+                <h4>Nacidos vivos por parto</h4>
+                <p class="formula">Lechones nacidos vivos entre los partos del período.</p>
+                <p class="ejemplo"><strong>911</strong> nacidos vivos ÷ <strong>75</strong> partos = <strong>12.1</strong> por parto.</p>
+            </article>
+            <article class="indicador">
+                <h4>Mortalidad antes del destete</h4>
+                <p class="formula">De los lechones que había para destetar, el porcentaje que no llegó al destete.</p>
+                <p class="ejemplo">(<strong>838</strong> disponibles − <strong>767</strong> destetados) ÷ 838 × 100 = <strong>8.5 %</strong>.</p>
+            </article>
+            <h3>Destete y engorda</h3>
+            <article class="indicador">
+                <h4>Cerdos vivos del lote</h4>
+                <p class="formula">Cerdos que entraron, menos las muertes, los eliminados, los vendidos y los trasladados a otro lote.</p>
+                <p class="ejemplo">El lote <strong>E-201</strong> de El Encino: <strong>289</strong> entraron − <strong>4</strong> muertes − <strong>1</strong> eliminado = <strong>284</strong> vivos.</p>
+            </article>
+            <article class="indicador">
+                <h4>Mortalidad del lote</h4>
+                <p class="formula">Muertes entre los cerdos que entraron, por 100.</p>
+                <p class="ejemplo"><strong>4</strong> muertes ÷ <strong>289</strong> cerdos × 100 = <strong>1.4 %</strong>.</p>
+            </article>
+            <article class="indicador">
+                <h4>Edad del lote</h4>
+                <p class="formula">La edad con la que entraron los cerdos más los días que lleva el lote.</p>
+                <p class="ejemplo">Entraron con <strong>63</strong> días y el lote lleva <strong>16</strong> días: tienen <strong>79</strong> días de edad.</p>
+            </article>
+            <article class="indicador">
+                <h4>Costo de entrada</h4>
+                <p class="formula">Cerdos que entraron por lo que costó cada uno.</p>
+                <p class="ejemplo"><strong>289</strong> cerdos × <strong>Q 730</strong> cada uno = <strong>Q 210,970</strong> de costo de entrada.</p>
+            </article>
+            <article class="indicador">
+                <h4>Ganancia diaria de peso</h4>
+                <p class="formula">Peso promedio del último pesaje menos el peso de entrada, entre los días transcurridos, por 1,000 para pasarlo a gramos.</p>
+                <p class="ejemplo">(<strong>38.76</strong> kg − <strong>25.6</strong> kg) ÷ <strong>16</strong> días × 1,000 = <strong>822</strong> gramos por día.</p>
+            </article>
+            <article class="indicador">
+                <h4>Kilos ganados</h4>
+                <p class="formula">Kilos que salieron más los kilos que hay en el corral (cerdos vivos por el peso promedio del último pesaje), menos los kilos que entraron.</p>
+                <p class="ejemplo"><strong>284</strong> vivos × <strong>38.76</strong> kg = 11,007 kg en el corral. 11,007 − <strong>7,398</strong> kg de entrada = <strong>3,608</strong> kg ganados.</p>
+            </article>
+            <article class="indicador">
+                <h4>Conversión alimenticia</h4>
+                <p class="formula">Kilos de alimento consumidos entre los kilos ganados.</p>
+                <p class="ejemplo"><strong>8,689</strong> kg de alimento ÷ <strong>3,608</strong> kg ganados = <strong>2.41</strong>.</p>
+            </article>
+            <article class="indicador">
+                <h4>Peso contra la guía</h4>
+                <p class="formula">Peso promedio del pesaje menos el peso que la guía de la genética espera a esa edad, y esa diferencia en porcentaje.</p>
+                <p class="ejemplo">El <strong>21 de noviembre de 2026</strong> el lote pesó <strong>38.76</strong> kg y la guía esperaba <strong>38.08</strong> kg: diferencia de <strong>0.68</strong> kg (<strong>1.8 %</strong>).</p>
+            </article>
+            <article class="indicador">
+                <h4>Uniformidad del pesaje</h4>
+                <p class="formula">Porcentaje de los cerdos pesados cuyo peso queda a menos de 10 % del promedio.</p>
+                <p class="ejemplo">De <strong>30</strong> cerdos pesados, <strong>20</strong> quedaron cerca del promedio: <strong>67 %</strong> de uniformidad.</p>
+            </article>
+            <h3>Sanidad y rastro</h3>
+            <article class="indicador">
+                <h4>Fecha segura de venta</h4>
+                <p class="formula">Fecha de la aplicación más los días de retiro del producto. Hasta esa fecha el lote no se puede vender.</p>
+                <p class="ejemplo"><strong>Oxitetraciclina LA 200</strong> se aplicó el <strong>3 de noviembre de 2026</strong> en el lote <strong>D-099</strong>, con <strong>28</strong> días de retiro: se puede vender desde el <strong>1 de diciembre de 2026</strong>.</p>
+            </article>
+            <article class="indicador">
+                <h4>Pérdida estimada por el rastro</h4>
+                <p class="formula">Del porcentaje de pulmón afectado se saca cuánta ganancia se pierde (5 % por cada 10 % de pulmón), de ahí los días extra que tardó el lote en llegar a mercado y, con el costo diario del alimento, el dinero.</p>
+                <p class="ejemplo">El lote <strong>T-290</strong> de Las Tapias tuvo <strong>7.7 %</strong> de pulmón afectado en <strong>30</strong> cerdos revisados: 7.7 ÷ 10 × 5 = <strong>3.9 %</strong> menos ganancia. Eso son <strong>3.6</strong> días extra por cerdo y <strong>Q 1,838</strong> de alimento en los <strong>50</strong> cerdos vendidos.</p>
+            </article>
+        </section>
+
+        <section class="capitulo" id="cap-8" data-capitulo="8">
+            <h2><span class="num">8</span>Reglas</h2>
+            <h3>Plazos y motivos</h3>
+            <ul class="vinetas-m">
+                <li><strong>Corregir y eliminar.</strong> El representante puede corregir o eliminar lo que registró hasta 7 días atrás. La administración puede hacerlo con cualquier fecha pasada.</li>
+                <li><strong>Motivo obligatorio.</strong> Para corregir o eliminar un dato guardado hay que escribir el motivo, de al menos 10 caracteres. Queda en la bitácora.</li>
+                <li><strong>Rastro.</strong> La revisión es del día de la venta o de hasta 3 días después, y el informe de la planta se puede registrar hasta 30 días después.</li>
+                <li><strong>Serología.</strong> El muestreo puede ser de hasta 90 días atrás, porque el laboratorio tarda.</li>
+                <li><strong>Fotos.</strong> Cada registro admite hasta 5 fotos; cada una se reduce a 1,280 píxeles de lado mayor.</li>
+                <li><strong>Cargar desde Excel.</strong> Hasta 300 filas por archivo, en los planes que lo incluyen (Pro y Premium).</li>
+            </ul>
+            <h3>Bloqueos</h3>
+            <ul class="vinetas-m">
+                <li><strong>Retiro vigente.</strong> Mientras no pase la fecha segura de un tratamiento, el lote no se puede vender. Si los cerdos vienen de otro lote con retiro, el aviso nombra el lote de origen.</li>
+                <li><strong>Empresa suspendida.</strong> Puede consultar, no registrar.</li>
+                <li><strong>Corral ocupado.</strong> Un corral con un lote abierto no recibe otro.</li>
+                <li><strong>Cierre del lote.</strong> Un lote se cierra vacío: lo que le quede debe haber salido antes por venta, traslado o muerte, y el cierre no puede ser anterior a su último dato.</li>
+            </ul>
+            <h3>Avisos de la reproducción</h3>
+            <ul class="vinetas-m">
+                <li>"Parto probable": cuando faltan 7 días o menos.</li>
+                <li>"Servida sin diagnóstico": desde los 28 días del servicio.</li>
+                <li>"Sin servicio": una cerda destetada o recién entrada hace más de 7 días y sin servicio.</li>
+                <li>"Lactando": más de 28 días sin destete.</li>
+                <li>Una vacuna se cuenta como "esta semana" hasta 3 días tarde; desde el cuarto día se marca "atrasada".</li>
+            </ul>
+            <h3 id="valores-ajustables">Valores que se ajustan</h3>
+            <p>Estos valores los fija el equipo de CHIBACH con la empresa. Cada uno tiene un valor de arranque y un rango permitido.</p>
+            <div class="tabla-m-wrap">
+                <table class="tabla-m configurables">
+                    <thead><tr><th scope="col">Valor</th><th scope="col">Arranca en</th><th scope="col">Mínimo</th><th scope="col">Máximo</th></tr></thead>
+                    <tbody>
+                        <tr data-config="DiasAviso"><th scope="row">Días de aviso antes del vencimiento</th><td>7</td><td>1</td><td>30</td></tr>
+                        <tr data-config="DiasGracia"><th scope="row">Días de gracia después del vencimiento</th><td>7</td><td>0</td><td>30</td></tr>
+                        <tr data-config="HoraTarea"><th scope="row">Hora de la tarea de madrugada (0 a 23, hora de Guatemala)</th><td>2</td><td>0</td><td>23</td></tr>
+                        <tr data-config="RefDestetadosCerdaAno"><th scope="row">Referencia: destetados por cerda al año</th><td>27.3</td><td>10.0</td><td>40.0</td></tr>
+                        <tr data-config="RefMortPredestetePct"><th scope="row">Referencia: mortalidad predestete (%)</th><td>14.6</td><td>0.0</td><td>50.0</td></tr>
+                        <tr data-config="MetaMortDestetePct"><th scope="row">Meta de mortalidad en destete (%)</th><td>2.0</td><td>0.0</td><td>20.0</td></tr>
+                        <tr data-config="AlertaMortDestetePct"><th scope="row">Alerta de mortalidad en destete (%)</th><td>3.0</td><td>0.0</td><td>20.0</td></tr>
+                        <tr data-config="MetaMortEngordaPct"><th scope="row">Meta de mortalidad en engorda (%)</th><td>2.5</td><td>0.0</td><td>20.0</td></tr>
+                        <tr data-config="AlertaMortEngordaPct"><th scope="row">Alerta de mortalidad en engorda (%)</th><td>4.0</td><td>0.0</td><td>20.0</td></tr>
+                        <tr data-config="RefConversionDestete"><th scope="row">Referencia: conversión alimenticia en destete</th><td>1.46</td><td>1.00</td><td>3.00</td></tr>
+                        <tr data-config="UsoAtencionPct"><th scope="row">Uso: porcentaje de atención</th><td>70</td><td>10</td><td>99</td></tr>
+                        <tr data-config="UsoUrgentePct"><th scope="row">Uso: porcentaje urgente</th><td>90</td><td>10</td><td>99</td></tr>
+                        <tr data-config="UsoMesesAviso"><th scope="row">Uso: meses de aviso según la tendencia</th><td>6</td><td>1</td><td>24</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="capitulo" id="cap-9" data-capitulo="9">
+            <h2><span class="num">9</span>Paso a paso por perfil</h2>
+            <p>El día típico de cada perfil de la demo, en pasos.</p>
+
+            <article class="ficha-paso" id="paso-a-paso-administradora">
+                <h3>Administradora de empresa</h3>
+                <p class="quien">En la demo: Lucía Herrera, de Porcina San Miguel, con tres granjas.</p>
+                <ol class="pasos-m">
+                    <li>Entre y mire el <strong>Tablero</strong>: el semáforo de cada granja dice dónde hay que mirar.</li>
+                    <li>Presione la fila de una granja en alerta para ir a lo pendiente: un retiro, una vacuna atrasada o una mortalidad alta.</li>
+                    <li>Abra <strong>Comparativo</strong> y <strong>Resumen de granjas</strong> para ver cuál granja va mejor y por qué.</li>
+                    <li>En <strong>Mis granjas</strong>, abra una granja y revise sus naves, corrales y lotes.</li>
+                    <li>En <strong>Usuarios</strong>, cree la cuenta de quien va a registrar y asígnele sus granjas.</li>
+                    <li>En <strong>Mi plan y pagos</strong>, revise el plan de cada línea y el próximo cobro.</li>
+                    <li>De vez en cuando, mire la <strong>Bitácora</strong> para saber quién cambió qué.</li>
+                </ol>
+            </article>
+
+            <article class="ficha-paso" id="paso-a-paso-representante">
+                <h3>Representante de granja</h3>
+                <p class="quien">En la demo: Juan Pérez, de El Encino y Las Tapias.</p>
+                <ol class="pasos-m">
+                    <li>Entre. Va directo a <strong>Mi granja</strong>; si tiene dos, elija la de hoy en el selector.</li>
+                    <li>En cada lote abierto, anote el <strong>registro del día</strong>: muertes, alimento en kilos y observaciones.</li>
+                    <li>Cuando pese una muestra, anote cada peso en <strong>Pesaje</strong>: la aplicación saca el promedio y lo compara con la guía.</li>
+                    <li>En <strong>Reproducción</strong>, abra la ficha de la cerda y anote el servicio, el parto o el destete.</li>
+                    <li>Si va a vender, abra el lote: si el botón <strong>Registrar venta</strong> está cerrado, el aviso dice desde qué fecha se puede.</li>
+                    <li>Si tiene el plan de fotos, tome la foto de la lesión o del corral desde el celular y anéxela al registro.</li>
+                </ol>
+            </article>
+
+            <article class="ficha-paso" id="paso-a-paso-veterinaria">
+                <h3>Veterinaria</h3>
+                <p class="quien">En la demo: la Dra. Ana Morales, asignada a las tres granjas de San Miguel.</p>
+                <ol class="pasos-m">
+                    <li>Entre y mire el <strong>Tablero</strong>: los partos de la semana, las cerdas sin servicio, los retiros vigentes y las vacunas atrasadas.</li>
+                    <li>Abra <strong>Sanidad</strong> de la granja y revise los retiros vigentes: qué producto, qué lote y hasta cuándo.</li>
+                    <li>Mire las vacunas atrasadas y las de esta semana, y registre las <strong>aplicaciones</strong> que se hicieron.</li>
+                    <li>Registre <strong>serologías</strong> y <strong>necropsias</strong>, con sus fotos.</li>
+                    <li>En <strong>Rastro</strong>, revise las lesiones por lote y cuánto le costaron a la granja.</li>
+                </ol>
+            </article>
+
+            <article class="ficha-paso" id="paso-a-paso-primer-ingreso">
+                <h3>Primer ingreso</h3>
+                <p class="quien">En la demo: nuevo@demo.gt.</p>
+                <ol class="pasos-m">
+                    <li>Reciba de la administración su correo y su contraseña temporal.</li>
+                    <li>Escríbalos en la pantalla de inicio y presione <strong>Entrar</strong>.</li>
+                    <li>En <strong>Cree su contraseña</strong>, escriba una propia de al menos 10 caracteres, con mayúsculas, minúsculas y números, y repítala.</li>
+                    <li>Presione <strong>Guardar y entrar</strong>. Desde ahora entra con su contraseña nueva.</li>
+                </ol>
+            </article>
+        </section>
+
+        <section class="capitulo" id="cap-10" data-capitulo="10">
+            <h2><span class="num">10</span>Dónde se guarda cada dato</h2>
+            <p>CHIBACH guarda la información en 41 tablas de datos. Esta lista dice para qué sirve cada una y trae el enlace a sus campos.</p>
+            <div class="tabla-m-wrap">
+                <table class="tabla-m tablas-datos">
+                    <thead><tr><th scope="col">Tabla</th><th scope="col">Qué guarda</th><th scope="col">Campos</th></tr></thead>
+                    <tbody>
+                        <tr data-tabla="Empresas"><th scope="row">Empresas</th><td>Cada empresa cliente: su nombre, su contacto, su estado (activa o suspendida) y quién paga por ella.</td><td class="cuenta"><a class="enlace" href="#campos-Empresas">8 campos</a></td></tr>
+                        <tr data-tabla="Duenos"><th scope="row">Dueños</th><td>Quien paga el servicio: la persona que administra una o varias empresas, con sus datos de cobro y la fecha desde la que se cuentan sus ciclos de 30 días.</td><td class="cuenta"><a class="enlace" href="#campos-Duenos">9 campos</a></td></tr>
+                        <tr data-tabla="EmpresasDueno"><th scope="row">Empresas de cada dueño</th><td>De qué dueño fue cada empresa y desde cuándo, para cobrarle a cada uno solo sus días.</td><td class="cuenta"><a class="enlace" href="#campos-EmpresasDueno">2 campos</a></td></tr>
+                        <tr data-tabla="Usuarios"><th scope="row">Usuarios</th><td>Las cuentas de la gente: nombre, correo, nivel de acceso, granjas asignadas, estado y si debe cambiar la contraseña temporal.</td><td class="cuenta"><a class="enlace" href="#campos-Usuarios">10 campos</a></td></tr>
+                        <tr data-tabla="Granjas"><th scope="row">Granjas</th><td>Cada granja de la empresa: nombre, propietario, ubicación, contacto y estado.</td><td class="cuenta"><a class="enlace" href="#campos-Granjas">8 campos</a></td></tr>
+                        <tr data-tabla="Perfiles"><th scope="row">Fichas de línea</th><td>La ficha de cada línea de producción de cada granja. Que la ficha esté activa es lo que hace aparecer la línea.</td><td class="cuenta"><a class="enlace" href="#campos-Perfiles">9 campos</a></td></tr>
+                        <tr data-tabla="Naves"><th scope="row">Naves</th><td>Las naves de cada línea de la granja, con su estado.</td><td class="cuenta"><a class="enlace" href="#campos-Naves">5 campos</a></td></tr>
+                        <tr data-tabla="Corrales"><th scope="row">Corrales</th><td>Los corrales de cada nave: para qué se usan, cuántos cerdos caben y cuánto miden.</td><td class="cuenta"><a class="enlace" href="#campos-Corrales">8 campos</a></td></tr>
+                        <tr data-tabla="Lotes"><th scope="row">Lotes</th><td>Los lotes de destete y engorda: número, fecha de inicio, cerdos que entraron, peso y edad de entrada, origen, costo, genética y cierre.</td><td class="cuenta"><a class="enlace" href="#campos-Lotes">18 campos</a></td></tr>
+                        <tr data-tabla="LoteCorrales"><th scope="row">Corrales de cada lote</th><td>Los corrales que ocupa cada lote: cuántos cerdos entraron a cada uno, desde cuándo y, si salió antes del cierre, cuándo y con cuántos.</td><td class="cuenta"><a class="enlace" href="#campos-LoteCorrales">4 campos</a></td></tr>
+                        <tr data-tabla="Cerdas"><th scope="row">Cerdas</th><td>Cada cerda de la granja: arete, genética, fechas de nacimiento y de entrada, origen y partos con los que llegó.</td><td class="cuenta"><a class="enlace" href="#campos-Cerdas">12 campos</a></td></tr>
+                        <tr data-tabla="Verracos"><th scope="row">Verracos</th><td>Cada verraco: arete, genética, fecha de entrada y estado.</td><td class="cuenta"><a class="enlace" href="#campos-Verracos">6 campos</a></td></tr>
+                        <tr data-tabla="EventosRepro"><th scope="row">Eventos de la cerda</th><td>Todo lo que le pasa a una cerda: servicios, diagnósticos, partos, adopciones, muertes de lechones, destetes y bajas. De aquí salen la situación y las alertas de cada cerda.</td><td class="cuenta"><a class="enlace" href="#campos-EventosRepro">21 campos</a></td></tr>
+                        <tr data-tabla="RegistrosLote"><th scope="row">Registros del día</th><td>El registro del día de cada lote: muertes con su causa, cerdos eliminados, alimento en kilos, fase y observaciones.</td><td class="cuenta"><a class="enlace" href="#campos-RegistrosLote">15 campos</a></td></tr>
+                        <tr data-tabla="Pesajes"><th scope="row">Pesajes</th><td>Cada pesaje de un lote: el peso de cada cerdo de la muestra, y de ahí el promedio, el mínimo, el máximo y la uniformidad.</td><td class="cuenta"><a class="enlace" href="#campos-Pesajes">10 campos</a></td></tr>
+                        <tr data-tabla="Ventas"><th scope="row">Ventas</th><td>Cada venta de cerdos: cuántos, kilos, precio, base del precio y comprador.</td><td class="cuenta"><a class="enlace" href="#campos-Ventas">15 campos</a></td></tr>
+                        <tr data-tabla="Traslados"><th scope="row">Traslados</th><td>Los cerdos que pasan de un lote a otro, dentro de una granja o entre granjas. Cada traslado deja una salida y una entrada.</td><td class="cuenta"><a class="enlace" href="#campos-Traslados">12 campos</a></td></tr>
+                        <tr data-tabla="ComprasAlimento"><th scope="row">Compras de alimento</th><td>Cada compra de alimento: fase, proveedor, días que cubre, quintales y costo. Con ella se calcula el costo por kilo del alimento.</td><td class="cuenta"><a class="enlace" href="#campos-ComprasAlimento">12 campos</a></td></tr>
+                        <tr data-tabla="Productos"><th scope="row">Productos sanitarios</th><td>Los productos sanitarios de la granja: vacunas, antibióticos y otros, con su dosis, su vía y sus días de retiro.</td><td class="cuenta"><a class="enlace" href="#campos-Productos">14 campos</a></td></tr>
+                        <tr data-tabla="PlanVacunas"><th scope="row">Plan de vacunas</th><td>El plan de vacunas de cada línea: qué vacuna toca y cuántos días después de qué fecha.</td><td class="cuenta"><a class="enlace" href="#campos-PlanVacunas">10 campos</a></td></tr>
+                        <tr data-tabla="Aplicaciones"><th scope="row">Aplicaciones</th><td>Cada aplicación de un producto a una cerda o a un lote. De sus días de retiro sale la fecha segura de venta.</td><td class="cuenta"><a class="enlace" href="#campos-Aplicaciones">20 campos</a></td></tr>
+                        <tr data-tabla="Serologias"><th scope="row">Serologías</th><td>Cada muestreo de laboratorio: enfermedad, prueba, resultado de cada cerdo y resumen del muestreo.</td><td class="cuenta"><a class="enlace" href="#campos-Serologias">18 campos</a></td></tr>
+                        <tr data-tabla="Necropsias"><th scope="row">Necropsias</th><td>Cada necropsia: lo que se encontró, el diagnóstico y las muestras enviadas al laboratorio.</td><td class="cuenta"><a class="enlace" href="#campos-Necropsias">16 campos</a></td></tr>
+                        <tr data-tabla="Rastros"><th scope="row">Revisiones de rastro</th><td>Cada revisión de lesiones en la planta de sacrificio, ligada a la venta de un lote.</td><td class="cuenta"><a class="enlace" href="#campos-Rastros">11 campos</a></td></tr>
+                        <tr data-tabla="RastroCerdos"><th scope="row">Cerdos del rastro</th><td>Cada cerdo revisado en el rastro: puntaje de cada lóbulo del pulmón, pleura, corazón, hígado y otras lesiones.</td><td class="cuenta"><a class="enlace" href="#campos-RastroCerdos">15 campos</a></td></tr>
+                        <tr data-tabla="Fotos"><th scope="row">Fotos</th><td>Las fotos de necropsias y de rastro: tamaño, descripción y quién las subió. Solo las ve quien ve la granja.</td><td class="cuenta"><a class="enlace" href="#campos-Fotos">14 campos</a></td></tr>
+                        <tr data-tabla="RastroConfig"><th scope="row">Configuración del rastro</th><td>La configuración del rastro de cada granja: cerdos por revisar en cada venta y cuánta ganancia se pierde por cada 10 % de pulmón afectado.</td><td class="cuenta"><a class="enlace" href="#campos-RastroConfig">5 campos</a></td></tr>
+                        <tr data-tabla="Listas"><th scope="row">Listas desplegables</th><td>Los valores de las listas desplegables: países, genética, causas de baja y de muerte, fases del alimento, enfermedades y siglas.</td><td class="cuenta"><a class="enlace" href="#campos-Listas">3 campos</a></td></tr>
+                        <tr data-tabla="Bitacora"><th scope="row">Bitácora</th><td>Cada cambio: qué se cambió, quién, cuándo y por qué. Solo se agregan filas, nunca se borran.</td><td class="cuenta"><a class="enlace" href="#campos-Bitacora">8 campos</a></td></tr>
+                        <tr data-tabla="Accesos"><th scope="row">Accesos</th><td>Cada ingreso y cada intento rechazado: fecha, correo y resultado.</td><td class="cuenta"><a class="enlace" href="#campos-Accesos">4 campos</a></td></tr>
+                        <tr data-tabla="Planes"><th scope="row">Planes</th><td>Los planes (Básico, Pro y Premium) y las herramientas que trae cada uno.</td><td class="cuenta"><a class="enlace" href="#campos-Planes">4 campos</a></td></tr>
+                        <tr data-tabla="Tramos"><th scope="row">Tramos</th><td>Los tramos de tamaño de cada línea: de cuántas cerdas o cuántos cerdos a cuántos.</td><td class="cuenta"><a class="enlace" href="#campos-Tramos">4 campos</a></td></tr>
+                        <tr data-tabla="Precios"><th scope="row">Precios</th><td>El precio al mes, en dólares, de cada plan en cada tramo.</td><td class="cuenta"><a class="enlace" href="#campos-Precios">1 campo</a></td></tr>
+                        <tr data-tabla="LineasPlan"><th scope="row">Planes de las líneas</th><td>El plan y el tramo de cada línea de cada granja, con el historial de cambios.</td><td class="cuenta"><a class="enlace" href="#campos-LineasPlan">6 campos</a></td></tr>
+                        <tr data-tabla="Cobros"><th scope="row">Cobros</th><td>Un cobro por dueño y ciclo de 30 días, con el detalle por empresa, granja y línea, el total y el vencimiento.</td><td class="cuenta"><a class="enlace" href="#campos-Cobros">9 campos</a></td></tr>
+                        <tr data-tabla="Pagos"><th scope="row">Pagos</th><td>Cada pago recibido: cobro al que corresponde, fecha, monto, medio y referencia.</td><td class="cuenta"><a class="enlace" href="#campos-Pagos">8 campos</a></td></tr>
+                        <tr data-tabla="Resumen"><th scope="row">Resumen diario de la granja</th><td>En el archivo de cada granja: sus cifras por línea y día, que alimentan el Resumen de granjas.</td><td class="cuenta"><a class="enlace" href="#campos-Resumen">6 campos</a></td></tr>
+                        <tr data-tabla="Resumenes"><th scope="row">Resúmenes semanales</th><td>El resumen semanal de cada granja y línea, con el que se arma el Resumen de granjas.</td><td class="cuenta"><a class="enlace" href="#campos-Resumenes">5 campos</a></td></tr>
+                        <tr data-tabla="Consolidacion"><th scope="row">Actualizaciones del resumen</th><td>Cada actualización del Resumen de granjas: cuándo, quién, cuántas granjas y si hubo errores.</td><td class="cuenta"><a class="enlace" href="#campos-Consolidacion">8 campos</a></td></tr>
+                        <tr data-tabla="Configuracion"><th scope="row">Configuración</th><td>Los valores que se ajustan en la plataforma: días de aviso y de gracia, referencias de los gráficos y metas de mortalidad.</td><td class="cuenta"><a class="enlace" href="#campos-Configuracion">4 campos</a></td></tr>
+                        <tr data-tabla="UsoSemanal"><th scope="row">Uso semanal</th><td>El espacio que usa cada granja cada semana, para avisar con tiempo antes de que se llene.</td><td class="cuenta"><a class="enlace" href="#campos-UsoSemanal">6 campos</a></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="capitulo" id="cap-11" data-capitulo="11">
+            <h2><span class="num">11</span>Seguridad</h2>
+            <ul class="vinetas-m">
+                <li><strong>Cada persona, su cuenta.</strong> Se entra con correo y contraseña, y cada cuenta ve solo lo de su empresa y de las granjas que se le asignaron.</li>
+                <li><strong>El permiso se revisa en el servidor.</strong> Un botón oculto no es la única barrera: aunque alguien lograra enviar una operación que su perfil no tiene, el servidor la rechaza.</li>
+                <li><strong>Cada dato lleva su firma.</strong> Si alguien cambia un dato por fuera de la aplicación, la firma deja de coincidir y la aplicación lo detecta.</li>
+                <li><strong>La bitácora no se puede borrar.</strong> Cada cambio queda encadenado con el anterior; si alguien altera la bitácora, la cadena se rompe y se nota.</li>
+                <li><strong>Las fotos son privadas.</strong> Solo las ve quien ve la granja; no hay enlaces abiertos.</li>
+                <li><strong>Contraseñas.</strong> La contraseña temporal se cambia al primer ingreso, y la aplicación limita las solicitudes por minuto de cada cuenta.</li>
+                <li><strong>Cada ingreso queda anotado,</strong> también los rechazados.</li>
+            </ul>
+        </section>
+
+        <section class="capitulo" id="cap-12" data-capitulo="12">
+            <h2><span class="num">12</span>Preguntas frecuentes</h2>
+            <div class="preguntas">
+                <details><summary>¿Puedo corregir un registro equivocado?</summary><p>Sí, escribiendo el motivo. El representante puede corregir lo de los últimos 7 días; la administración, cualquier fecha. El cambio queda en la bitácora.</p></details>
+                <details><summary>¿Qué hago si un cerdo murió y no lo anoté ese día?</summary><p>Anote el registro del día con su fecha. Para fechas más viejas que el plazo, pida a la administración que lo haga.</p></details>
+                <details><summary>¿Por qué no puedo vender un lote?</summary><p>Porque un tratamiento sigue con retiro vigente. El aviso del lote dice con qué producto y desde qué fecha se puede vender.</p></details>
+                <details><summary>¿Por qué no veo una pantalla que otra persona sí ve?</summary><p>Cada perfil ve lo suyo. La tabla de permisos del capítulo 2 dice qué puede hacer cada uno, y el plan de la línea decide qué herramientas están.</p></details>
+                <details><summary>¿Cómo cambio el plan de una línea?</summary><p>La administración de la empresa lo hace en Mi plan y pagos: cotiza el cambio, lo confirma y rige desde ese día.</p></details>
+                <details><summary>¿Puedo pasar mis datos desde Excel?</summary><p>Sí, en los planes Pro y Premium, con hasta 300 filas por archivo. Bajar las tablas en Excel viene en todos los planes.</p></details>
+                <details><summary>¿Funciona sin internet?</summary><p>No: la aplicación guarda todo en línea, para que todos vean lo mismo. Si falla la conexión, no se pierde lo ya guardado.</p></details>
+                <details><summary>¿Qué pasa si no se paga a tiempo?</summary><p>La aplicación avisa antes del vencimiento y da días de gracia. Pasados esos días, la empresa queda en solo lectura hasta que se registre el pago.</p></details>
+            </div>
+        </section>
+
+        <section class="cierre" id="contacto">
+            <h2>¿Quiere usarla en su granja?</h2>
+            <p class="intro">Cuéntenos cuántas cerdas y cuántos cerdos tiene, y le recomendamos el plan que le corresponde.</p>
+            <div class="botones">
+                <a class="btn btn-claro" data-contacto="cierre" href="https://wa.me/50258253416?text=Hola%2C%20quiero%20empezar%20con%20CHIBACH." target="_blank" rel="noopener noreferrer">Escríbanos por WhatsApp</a>
+                <a class="btn btn-claro-borde" href="index.html#demo">Probar la demo</a>
+            </div>
+        </section>
+    </main>
+</div>
+
+<footer class="pie">
+    <div class="envoltura pie-in">
+        <a class="logo logo-pie" href="index.html" aria-label="CHIBACH, inicio"><svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" role="img">
+  <title>CHIBACH</title>
+  <g>
+  <path fill="currentColor" d="M6 30L6 25L2 21L5 18L10 22L14 18.9L16 17.7L16 48L16 58L9 58L9 45L7.9 43.9L6.9 42.6L6.2 41L5.8 39.2L5.5 37.3L5.4 35.1L5.6 32.6Z"/>
+  <path fill="currentColor" d="M20 15.7L22.1 14.9L26.2 14L27 14L27 49.9L26.4 49.9L22.9 49.5L20 49Z"/>
+  <path fill="currentColor" d="M31 14L34.6 14.5L38 15.6L38 49.2L36.4 49.5L33.1 49.9L31 50Z"/>
+  <path fill="currentColor" d="M42 17.5L43 18L46 17L53 5L53 20L56 25L62 25L62 38L55 39L54.7 40.2L54.3 41.3L53.8 42.3L53.2 43.2L52.6 44.1L51.8 44.8L51 45.5L50 46L50 58L43 58L43 48L42 48.3Z"/>
+  </g>
+  <text x="80" y="45" font-family="'Archivo', sans-serif" font-size="36" font-weight="700" fill="currentColor">CHIBACH</text>
+</svg></a>
+        <p class="pie-empresa">Un producto de Pixan Tech</p>
+        <nav class="pie-nav" aria-label="Enlaces del pie">
+            <a href="index.html">Inicio</a>
+            <a href="demo/">Demo</a>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>

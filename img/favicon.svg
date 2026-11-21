@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img">
+  <title>CHIBACH</title>
+  <rect width="64" height="64" rx="14" fill="#4F6B2A"/>
+  <g transform="translate(6.4 6.4) scale(0.8)">
+    <path fill="#F6F5EE" d="M6 30L6 25L2 21L5 18L10 22L14 18.9L16 17.7L16 48L16 58L9 58L9 45L7.9 43.9L6.9 42.6L6.2 41L5.8 39.2L5.5 37.3L5.4 35.1L5.6 32.6Z"/>
+    <path fill="#F6F5EE" d="M20 15.7L22.1 14.9L26.2 14L27 14L27 49.9L26.4 49.9L22.9 49.5L20 49Z"/>
+    <path fill="#F6F5EE" d="M31 14L34.6 14.5L38 15.6L38 49.2L36.4 49.5L33.1 49.9L31 50Z"/>
+    <path fill="#F6F5EE" d="M42 17.5L43 18L46 17L53 5L53 20L56 25L62 25L62 38L55 39L54.7 40.2L54.3 41.3L53.8 42.3L53.2 43.2L52.6 44.1L51.8 44.8L51 45.5L50 46L50 58L43 58L43 48L42 48.3Z"/>
+  </g>
+</svg>
